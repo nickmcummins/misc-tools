@@ -1,0 +1,8 @@
+JETBRAINS_IDE_DIRECTORIES: 
+  Linux: 
+    pycharm-ce: "/opt/pycharm-community" 
+    clion: "/opt/clion"
+    phpstorm: "/opt/phpstorm" 
+    intellij-ce: "/usr/share/intellijidea-ce" 
+    intellij-ue: "/usr/share/intellij-idea-ultimate-edition" 
+    rubymine: "/usr/share/rubymine"
