@@ -1,6 +1,6 @@
 require 'yaml'
 
-DIRS = YAML.load_file('config.yaml')['JETBRAINS_IDE_DIRECTORIES']['Linux']
+DIRS = YAML.load_file('config/jetbrains-ide-dirs.yaml')['JETBRAINS_IDE_DIRECTORIES']['Linux']
 DEF_XMS = '-Xms128m'
 DEF_XMX = '-Xmx750m'
 
