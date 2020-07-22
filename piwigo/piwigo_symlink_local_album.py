@@ -35,7 +35,7 @@ if __name__ == '__main__':
         return imgfilename.split('.')[-1].lower() == IMGFORMAT.lower()
 
     def is_in_range(imgfilename):
-        imgnum = imgfilename.split('.')[0].split('_')[-1]
+        imgnum = int(imgfilename.split('.')[0].split('_')[-1])
         return minrange <= imgnum <= maxrange
 
 
