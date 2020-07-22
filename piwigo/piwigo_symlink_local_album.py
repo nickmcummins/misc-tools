@@ -14,7 +14,7 @@ if __name__ == '__main__':
     albums_root = os.getenv('ALBUMS_ROOT', f'{str(pathlib.Path.home())}/Pictures/Albums')
 
     def symlink_img(img):
-        piwigo_album_dir = f'{piwigo_dir}/gallery/{src_album}'
+        piwigo_album_dir = f'{piwigo_dir}/galleries/{src_album}'
         if not os.path.exists(piwigo_album_dir):
             os.popen(f'mkdir -p {piwigo_album_dir}').read()
 
