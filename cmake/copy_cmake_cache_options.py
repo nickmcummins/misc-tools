@@ -21,7 +21,7 @@ def not_internal(option_line):
 
 
 def options_dict(option_lines):
-    return dict(map(lambda opt: [opt.split('=')[0], opt.split('=')[1]], filter(lambda line: starts_with(option_prefixes, line) and not_internal(line), option_lines)))
+    return dict(map(lambda opt: [opt.split('=')[0], opt.split('=')[1] if len(opt.split('=')) > 1 else ""], filter(lambda line: not_internal(line), option_lines)))
 
 
 if __name__ == '__main__':
@@ -61,8 +61,13 @@ if __name__ == '__main__':
     print(f'destination file build directory: {to_build_dir}')
     print(f'destination file source directory: {to_source_dir}')
 
+    from_options_filtered = {}
+    for from_option in from_options.keys():
+        if starts_with(option_prefixes, from_option):
+            from_options_filtered[from_option] = from_options[from_option]
+
     for to_line in to_lines:
-        for option in from_options.keys():
+        for option in from_options_filtered.keys():
             if to_line.startswith(option):
                 option_name = option.split(':')[0]
                 current_value = to_line.split("=")[-1]
