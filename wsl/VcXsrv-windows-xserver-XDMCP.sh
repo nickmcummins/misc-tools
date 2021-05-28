@@ -1,0 +1,1 @@
+xlaunch.exe -run XDMCP-mode.xlaunch

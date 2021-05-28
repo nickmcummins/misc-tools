@@ -1,0 +1,6 @@
+export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
+export LIBGL_ALWAYS_INDIRECT=1
+export XDG_SESSION_TYPE=x11
+export GDK_BACKEND=x11 
+
+python ~/update_xlaunch_ipaddress.py
