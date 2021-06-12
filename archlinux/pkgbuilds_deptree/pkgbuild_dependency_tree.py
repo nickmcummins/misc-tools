@@ -35,7 +35,7 @@ class PkgbuildDependencyTree:
 
     def show_graph(self):
         pos = graphviz_layout(self.graph, prog='dot')
-        nx.draw(self.graph, pos=pos, with_labels=True, node_size=4000, font_size=8, font_family='Liberation Sans')
+        nx.draw(self.graph, pos=pos, with_labels=True, node_size=2500, font_size=8, font_family='Liberation Sans')
         plt.show()
 
 
