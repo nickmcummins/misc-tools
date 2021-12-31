@@ -124,6 +124,8 @@ mewtwo1 = Moveset('Mewtwo', ['Psychic', 'Fire Blast', 'Ice Beam', 'Energy Ball']
 mewtwo2 = Moveset('Mewtwo', ['Psychic', 'Fire Blast', 'Ice Beam', 'Shadow Ball'])
 mewtwo3 = Moveset('Mewtwo', ['Psychic', 'Earthquake', 'Ice Beam', 'Shadow Ball'])
 mewtwo4 = Moveset('Mewtwo', ['Psychic', 'Aura Sphere', 'Ice Beam', 'Shadow Ball'])
+mewtwo5 = Moveset('Mewtwo', ['Psychic', 'Aura Sphere', 'Ice Beam', 'Fire Blast'])
+
 
 
 print(azelf1)
@@ -134,3 +136,4 @@ print(mewtwo1)
 print(mewtwo2)
 print(mewtwo3)
 print(mewtwo4)
+print(mewtwo5)
