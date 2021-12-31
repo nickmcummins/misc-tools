@@ -71,11 +71,16 @@ MOVE_TYPES = {
     'Ice Beam': 'Ice', 
     'Psychic': 'Psychic', 
     'Drain Punch': 'Fighting',
+    'Brick Break': 'Fighting',
+    'Aura Sphere': 'Fighting',
     'Energy Ball': 'Grass',
     'Dazzling Gleam': 'Fairy', 
     'Flamethrower': 'Fire',
     'U-Turn': 'Bug',
-    'Shadow Ball': 'Ghost'
+    'Shadow Ball': 'Ghost',
+    'Fire Blast': 'Fire',
+    'Earthquake': 'Ground'
+
 }
 
 types = set(map(lambda type: str(type), list(Type)))
@@ -90,27 +95,42 @@ def moveset_advantages(movetypes):
     return type_advantages
 
 class Moveset:
-    def __init__(self, moves):
+    def __init__(self, pokemon, moves):
+        self.pokemon = pokemon
         self.moves = moves
 
     def __str__(self):
         advantages = moveset_advantages(list(map(lambda move: MOVE_TYPES[move], self.moves)))
         missing = types - advantages.keys()
 
-        s = '/'.join(self.moves) + ':\n'
-        s += f'\t[{str(len(advantages))} type advantages]\n' 
+        s = f'{self.pokemon} - ' + '/'.join(self.moves) + ':\n'
+        s += f'    [{str(len(advantages))} type advantages]\n' 
         for a in advantages.keys():
-            s += f'\t\t{a} [from ' + ','.join(advantages[a]) + "]\n"    
-        s+= ','.join(missing)
+            alltype_weaknesses = ','.join(WEAKNESSES[a])
+            s += f'        {a} [from ' + ','.join(advantages[a]) + f'] [weak against {alltype_weaknesses}]\n'    
+        s += f'    [{str(len(missing))} types with no type advantage]\n'
+        for missingtype in missing:
+            missingtype_weaknesses = ','.join(WEAKNESSES[missingtype])
+            s += f'        {missingtype} [weak against {missingtype_weaknesses}]\n'
+
+        s += '\n'
         return s
 
-azelf1 = Moveset(['Thunderbolt', 'Drain Punch', 'Psychic', 'Flamethrower'])
-azelf2 = Moveset(['Energy Ball', 'Drain Punch', 'Psychic', 'Flamethrower'])
-azelf3 = Moveset(['Energy Ball', 'Drain Punch', 'Psychic', 'U-Turn'])
-mesprit1 = Moveset(['Ice Beam', 'Drain Punch', 'Psychic', 'Shadow Ball'])
+azelf1 = Moveset('Azelf', ['Thunderbolt', 'Drain Punch', 'Psychic', 'Flamethrower'])
+azelf2 = Moveset('Azelf', ['Energy Ball', 'Drain Punch', 'Psychic', 'Flamethrower'])
+azelf3 = Moveset('Azelf', ['Energy Ball', 'Drain Punch', 'Psychic', 'U-Turn'])
+mesprit1 = Moveset('Azelf', ['Ice Beam', 'Drain Punch', 'Psychic', 'Shadow Ball'])
+mewtwo1 = Moveset('Mewtwo', ['Psychic', 'Fire Blast', 'Ice Beam', 'Energy Ball'])
+mewtwo2 = Moveset('Mewtwo', ['Psychic', 'Fire Blast', 'Ice Beam', 'Shadow Ball'])
+mewtwo3 = Moveset('Mewtwo', ['Psychic', 'Earthquake', 'Ice Beam', 'Shadow Ball'])
+mewtwo4 = Moveset('Mewtwo', ['Psychic', 'Aura Sphere', 'Ice Beam', 'Shadow Ball'])
 
 
 print(azelf1)
 print(azelf2)
 print(azelf3)
 print(mesprit1)
+print(mewtwo1)
+print(mewtwo2)
+print(mewtwo3)
+print(mewtwo4)
