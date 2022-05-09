@@ -6,7 +6,9 @@ namespace DecompiledAssemblySourcesTool
 {
     public static class Extensions
     {
-        private static readonly string Comma = ", ";
+        public  static readonly string Comma = ", ";
+        public static readonly string Space = " ";
+
         public static IEnumerable<XmlNode> Select(this XmlNodeList nodeList)
         {
             var list = new List<XmlNode>();
