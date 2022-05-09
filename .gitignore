@@ -1,3 +1,6 @@
 .idea/
 PokemonBDSPTypeAnalyzer/.vs/
 **/__pycache__
+CSharpTools/.vs/
+CSharpTOols/DecompiledAssemblySourcesTool/bin/
+CSharpTOols/DecompiledAssemblySourcesTool/obj/
