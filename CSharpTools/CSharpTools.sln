@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32422.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecompiledAssemblySourcesTool", "DecompiledAssemblySourcesTool\DecompiledAssemblySourcesTool.csproj", "{B1F22960-3B5A-47CC-A53E-B7DA64368DD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1F22960-3B5A-47CC-A53E-B7DA64368DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F22960-3B5A-47CC-A53E-B7DA64368DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F22960-3B5A-47CC-A53E-B7DA64368DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F22960-3B5A-47CC-A53E-B7DA64368DD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42EF6C9E-FA4F-4556-8C99-DAC24E79764A}
+	EndGlobalSection
+EndGlobal
