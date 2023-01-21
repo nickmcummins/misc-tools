@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Data\json\Goodra.json" />
+    <None Remove="Data\json\VioletScarletMoves.json" />
+    <None Remove="VioletScarletMoves.xlsx" />
+    <None Remove="VioletScarletMoves.yaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\json\Goodra.json" />
+    <EmbeddedResource Include="Data\json\VioletScarletMoves.json" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3164 @@
+[
+  {
+    "Move": "Beat Up",
+    "Type": "Dark",
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Deals additional damage the more the Pokemon in the trainer's party. Pokemon which have fainted or status conditions will be excluded.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Comeuppance",
+    "Type": "Dark",
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user attacks the last opposing Pokemon that hit it with either a physical or special attack, and deals double the damage of the move.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Counter",
+    "Type": "Fighting",
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "If the user is hit by a Physical Attack, inflicts double the damage taken back on the opponent which used the attack.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Endeavor",
+    "Type": "Normal",
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "Reduces the opponent's HP to match the current HP of the user.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Fissure",
+    "Type": "Ground",
+    "PP": 5,
+    "Effect": "The opponent faints if hit with this attack.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Flail",
+    "Type": "Normal",
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Increases damage the less HP the user has left.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Fling",
+    "Type": "Dark",
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "This moves power and effects change depends on the user's held item. The user will also lose its held item.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Guillotine",
+    "Type": "Normal",
+    "PP": 5,
+    "Effect": "The move has a chance of landing a one-hit KO if the target's level is lower than the user's level. It always misses if the user's level is lower than the target.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Gyro Ball",
+    "Type": "Steel",
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "The move inflicts more damage if the user is slower than the target. Its base power is capped at 150.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Heat Crash",
+    "Type": "Fire",
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The attack's power is based on the target's weight. The lighter the target, the greater the power. The base power can go as low as 20 if the target opponent is 50% of the user's weight and as high as 120 if the target is less than 20% of the user's weight.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Heavy Slam",
+    "Type": "Steel",
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The attack's power is based on the target's weight. The lighter the target, the greater the power. The base power can go as low as 20 if the target opponent is 50% of the user's weight and as high as 120 if the target is less than 20% of the user's weight.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Low Kick",
+    "Type": "Fighting",
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "The attack's power is based on the target's weight. The heavier the target, the greater the power. The base power can go as low as 20 if the target opponent is under 10kg and as high as 120 if the target is over 200kg.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Metal Burst",
+    "Type": "Steel",
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user damages the last Pokemon to hit it with 150% of the damage inflicted to the user.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Present",
+    "Type": "Normal",
+    "Accuracy": 90,
+    "PP": 15,
+    "Effect": "40% chance of damaging target with 40 power. 30% chance of damaging target with 80 power. 10% chance of damaging target with 120 power. 20% chance of healing 1\/4 of the user's max HP, but has no effect if the user has full HP.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Reversal",
+    "Type": "Fighting",
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Increases damage based on how much HP the user is missing. The lower the user's HP, the greater the base power.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Seismic Toss",
+    "Type": "Fighting",
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "The damage of this attack depends on the user's current level.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Super Fang",
+    "Type": "Normal",
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "The user halves the opponent's current HP.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Electro Ball",
+    "Type": "Electric",
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Increases damage based on the difference of Speed between the user and the target. The move's base power increases if the opponent's speed is lower than the user's speed.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Final Gambit",
+    "Type": "Fighting",
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "The user faints and damages the opponent equal to the amount of HP it had when it used this move. The user does not faint if the attack misses.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Grass Knot",
+    "Type": "Grass",
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "The attack's power is based on the target's weight. The heavier the target, the greater the power. The base power can go as low as 20 if the target opponent is under 10kg and as high as 120 if the target is over 200kg.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Mirror Coat",
+    "Type": "Psychic",
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "If the user is hit by a Special Attack, inflicts double the damage taken back on the opponent which used the attack.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Night Shade",
+    "Type": "Ghost",
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "The damage of this attack is equal to the user's current level.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Ruination",
+    "Type": "Dark",
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "Damages the opponent for 50% of its current HP.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Sheer Cold",
+    "Type": "Ice",
+    "PP": 5,
+    "Effect": "The opponent faints if hit with this attack.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Spit Up",
+    "Type": "Normal",
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "This attack's damage depends on how much power was stored by the move Stockpile. It has a base power of 100 if Stockpile was used once and goes up to 200 and 300 when using the said move 2 and 3 times respectively.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Explosion",
+    "Type": "Normal",
+    "Power": 250,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "The user faints after using this move.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Self-Destruct",
+    "Type": "Normal",
+    "Power": 200,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "The user faints after using this move.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Gigaton Hammer",
+    "Type": "Steel",
+    "Power": 160,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "The move cannot be used consecutively.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Focus Punch",
+    "Type": "Fighting",
+    "Power": 150,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "The user moves first to charge and last to attack within the same turn. The user flinches if the user gets damaged in between.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Giga Impact",
+    "Type": "Normal",
+    "Power": 150,
+    "Accuracy": 90,
+    "PP": 5,
+    "Effect": "The user can't attack on the next turn.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Head Smash",
+    "Type": "Rock",
+    "Power": 150,
+    "Accuracy": 80,
+    "PP": 5,
+    "Effect": "The user also takes recoil damage equal to half of the damage inflicted.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Blast Burn",
+    "Type": "Fire",
+    "Power": 150,
+    "Accuracy": 90,
+    "PP": 5,
+    "Effect": "The user will be unable to attack next turn.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Eruption",
+    "Type": "Fire",
+    "Power": 150,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "Increases damage the higher the user's HP. The move's power is calculated based on the opponent's current HP and max HP: Power = (Opponent's Current HP x 150)\/Opponent's Max HP",
+    "Category": "Special"
+  },
+  {
+    "Move": "Frenzy Plant",
+    "Type": "Grass",
+    "Power": 150,
+    "Accuracy": 90,
+    "PP": 5,
+    "Effect": "The user will be unable to attack next turn.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Hydro Cannon",
+    "Type": "Water",
+    "Power": 150,
+    "Accuracy": 90,
+    "PP": 5,
+    "Effect": "The user can't attack on the next turn.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Hyper Beam",
+    "Type": "Normal",
+    "Power": 150,
+    "Accuracy": 90,
+    "PP": 5,
+    "Effect": "The user will be unable to attack next turn.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Last Resort",
+    "Type": "Normal",
+    "Power": 140,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Sky Attack",
+    "Type": "Flying",
+    "Power": 140,
+    "Accuracy": 90,
+    "PP": 5,
+    "Effect": "The user charges in the first turn and attacks in the next turn instead. Has a 30% chance of causing the opponent to flinch.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Boomburst",
+    "Type": "Normal",
+    "Power": 140,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "No additional effect.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Steel Beam",
+    "Type": "Steel",
+    "Power": 140,
+    "Accuracy": 95,
+    "PP": 5,
+    "Effect": "The user loses half of its max HP unless it has Magic Guard.",
+    "Category": "Special"
+  },
+  {
+    "Move": "High Jump Kick",
+    "Type": "Fighting",
+    "Power": 130,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "If the attack misses, the user takes half of its max HP as damage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Steel Roller",
+    "Type": "Steel",
+    "Power": 130,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "The user attacks while destroying the terrain. The move fails if the ground hasn't been turned into a terrain.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Draco Meteor",
+    "Type": "Dragon",
+    "Power": 130,
+    "Accuracy": 90,
+    "PP": 5,
+    "Effect": "Lowers the user's Special Attack by two stages.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Leaf Storm",
+    "Type": "Grass",
+    "Power": 130,
+    "Accuracy": 90,
+    "PP": 5,
+    "Effect": "Lowers the user's Special Attack by two stages.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Overheat",
+    "Type": "Fire",
+    "Power": 130,
+    "Accuracy": 90,
+    "PP": 5,
+    "Effect": "Lowers the user's Special Attack by two stages.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Solar Blade",
+    "Type": "Grass",
+    "Power": 125,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user charges in the first turn and attacks in the next turn instead. If Sunny Day is active, the charge and attack happens in the same turn.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Axe Kick",
+    "Type": "Fighting",
+    "Power": 120,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "Has a chance to make the target confused if the move lands. If it misses, the user takes half of its max HP as damage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Brave Bird",
+    "Type": "Flying",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "The user also takes recoil damage equal to 1\/3 of the damage inflicted.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Close Combat",
+    "Type": "Fighting",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "Lowers the user's Defense and Special Defense stats by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Double Shock",
+    "Type": "Electric",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "Causes the user to lose its Electric typing if used by an Electric type. The move will fail if the user is not an Electric type.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Double-Edge",
+    "Type": "Normal",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "The user also takes recoil damage equal to 1\/3 of the damage inflicted.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Flare Blitz",
+    "Type": "Fire",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "The user also takes recoil damage equal to 1\/3 of the damage inflicted. Has a 10% chance to burn opponents.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Glaive Rush",
+    "Type": "Dragon",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "Causes the next attack to the user to be a guaranteed hit and deal double damage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Gunk Shot",
+    "Type": "Poison",
+    "Power": 120,
+    "Accuracy": 80,
+    "PP": 5,
+    "Effect": "Has a 30% chance to poison the opponent.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Headlong Rush",
+    "Type": "Ground",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "The user smashes into the target in a full-body tackle. This also lowers the user’s Defense and Sp. Def stats.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Mega Kick",
+    "Type": "Normal",
+    "Power": 120,
+    "Accuracy": 75,
+    "PP": 5,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Megahorn",
+    "Type": "Bug",
+    "Power": 120,
+    "Accuracy": 85,
+    "PP": 10,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Outrage",
+    "Type": "Dragon",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user uses the same attack for 2-3 turns and then becomes confused after.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Power Whip",
+    "Type": "Grass",
+    "Power": 120,
+    "Accuracy": 85,
+    "PP": 10,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Pyro Ball",
+    "Type": "Fire",
+    "Power": 120,
+    "Accuracy": 90,
+    "PP": 5,
+    "Effect": "Has a 10% chance to burn the opponent.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Superpower",
+    "Type": "Fighting",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "Lowers the user's Attack and Defense by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Thrash",
+    "Type": "Normal",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user uses the same attack for 2-3 turns and then becomes confused.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Wave Crash",
+    "Type": "Water",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user shrouds itself in water and slams into the target with its whole body to inflict damage. This also damages the user quite a lot.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Wood Hammer",
+    "Type": "Grass",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "The user also takes recoil damage equal to 1\/3 of the damage inflicted.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Armor Cannon",
+    "Type": "Fire",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "Lowers the user's Defense and Special Defense stats by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Belch",
+    "Type": "Poison",
+    "Power": 120,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "The user needs to eat a held Berry in order to use this move.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Focus Blast",
+    "Type": "Fighting",
+    "Power": 120,
+    "Accuracy": 70,
+    "PP": 5,
+    "Effect": "Has a 10% chance to lower the opponent's Special Defense by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Future Sight",
+    "Type": "Psychic",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Hits the target two turns after it is used.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Make It Rain",
+    "Type": "Steel",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "Lowers the opponent's Special Attack stat by one stage. The user also gains money after battles in the main game.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Petal Dance",
+    "Type": "Grass",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user uses the same attack for 2-3 turns and then becomes confused after.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Solar Beam",
+    "Type": "Grass",
+    "Power": 120,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user charges in the first turn and attacks in the next turn instead. If Sunny Day is active, the charge and attack happens in the same turn.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Zap Cannon",
+    "Type": "Electric",
+    "Power": 120,
+    "Accuracy": 50,
+    "PP": 5,
+    "Effect": "Paralyzes the opponent."
+  },
+  {
+    "Move": "Blizzard",
+    "Type": "Ice",
+    "Power": 110,
+    "Accuracy": 70,
+    "PP": 5,
+    "Effect": "Has a 10% chance to freeze the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Fire Blast",
+    "Type": "Fire",
+    "Power": 110,
+    "Accuracy": 85,
+    "PP": 5,
+    "Effect": "Has a 10% chance to burn opponents.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Hurricane",
+    "Type": "Flying",
+    "Power": 110,
+    "Accuracy": 70,
+    "PP": 10,
+    "Effect": "Has a 30% chance to confuse the opponent. Also damages opponents using Fly, Bounce, or Sky Drop.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Hydro Pump",
+    "Type": "Water",
+    "Power": 110,
+    "Accuracy": 80,
+    "PP": 5,
+    "Effect": "No additional effect.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Thunder",
+    "Type": "Electric",
+    "Power": 110,
+    "Accuracy": 70,
+    "PP": 10,
+    "Effect": "This move damages Pokemon using Fly, Bounce, or Sky Drop and has a 30% chance to paralyze the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Collision Course",
+    "Type": "Fighting",
+    "Power": 100,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "Deals 30% more damage if the move is super-effective.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Crabhammer",
+    "Type": "Water",
+    "Power": 100,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "This attack has a 1-stage increased Critical Hit ratio.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Cross Chop",
+    "Type": "Fighting",
+    "Power": 100,
+    "Accuracy": 80,
+    "PP": 5,
+    "Effect": "This attack has a 1-stage increased Critical Hit ratio.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Dragon Rush",
+    "Type": "Dragon",
+    "Power": 100,
+    "Accuracy": 75,
+    "PP": 10,
+    "Effect": "Has a 20% chance of causing the opponent to flinch.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Dynamic Punch",
+    "Type": "Fighting",
+    "Power": 100,
+    "Accuracy": 50,
+    "PP": 5,
+    "Effect": "Confuses the opponent.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Earthquake",
+    "Type": "Ground",
+    "Power": 100,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Hits all Pokemon on the field. Damage is doubled on Pokemon using Dig.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Flying Press",
+    "Type": "Fighting",
+    "Power": 100,
+    "Accuracy": 95,
+    "PP": 10,
+    "Effect": "Considered both a Flying and Fighting type move.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Hammer Arm",
+    "Type": "Fighting",
+    "Power": 100,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "Lowers the user's Speed by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Hyper Drill",
+    "Type": "Normal",
+    "Power": 100,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "This attack goes through Protect, Detect, and the like.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Ice Hammer",
+    "Type": "Ice",
+    "Power": 100,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "Lowers the user's Speed by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Iron Tail",
+    "Type": "Steel",
+    "Power": 100,
+    "Accuracy": 75,
+    "PP": 15,
+    "Effect": "Has a 30% chance to lower the opponent's Defense by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Spin Out",
+    "Type": "Steel",
+    "Power": 100,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "Lowers the user's Speed stat by two stages.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Stone Edge",
+    "Type": "Rock",
+    "Power": 100,
+    "Accuracy": 80,
+    "PP": 5,
+    "Effect": "This attack has a 1-stage increased Critical Hit ratio.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Dream Eater",
+    "Type": "Psychic",
+    "Power": 100,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Fails when used against an opponent which is not asleep. The user recovers half the damage inflicted as HP.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Electro Drift",
+    "Type": "Electric",
+    "Power": 100,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "Deals 30% more damage if the move is super-effective.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Inferno",
+    "Type": "Fire",
+    "Power": 100,
+    "Accuracy": 50,
+    "PP": 5,
+    "Effect": "Burns the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Foul Play",
+    "Type": "Dark",
+    "Power": 95,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Uses the opponent's Attack stat in damage calculation. Takes status conditions and stat boosts or drops into consideration but not boosts from the opponent's ability.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "High Horsepower",
+    "Type": "Ground",
+    "Power": 95,
+    "Accuracy": 95,
+    "PP": 10,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Heat Wave",
+    "Type": "Fire",
+    "Power": 95,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "Has a 10% chance to burn opponents.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Moonblast",
+    "Type": "Fairy",
+    "Power": 95,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 30% chance to lower the opponent's Special Attack by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Sludge Wave",
+    "Type": "Poison",
+    "Power": 95,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Has a 10% chance to poison the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Aqua Tail",
+    "Type": "Water",
+    "Power": 90,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Attack Order",
+    "Type": "Bug",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "This attack has a 1-stage increased Critical Hit ratio.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Bitter Blade",
+    "Type": "Fire",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user recovers half the damage inflicted.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "First Impression",
+    "Type": "Bug",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Only works during the first turn each time the user enters battle. The move has a +2 priority.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Fly",
+    "Type": "Flying",
+    "Power": 90,
+    "Accuracy": 95,
+    "PP": 15,
+    "Effect": "The user is semi-invulnerable during the first turn and attacks during the second turn. If the target uses Gust, Helping Hand, Hurricane, Sky Uppercut, Smack Down, Thousand Arrows, Thunder, Toxic (if used by a Poison-type Pokemon), or Twister, the move will hit even if the user is in a semi-invulnerable turn.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Leaf Blade",
+    "Type": "Grass",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "This attack has a 1-stage increased Critical Hit ratio.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Meteor Mash",
+    "Type": "Steel",
+    "Power": 90,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "Has a 20% chance to increase the user's Attack by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Petal Blizzard",
+    "Type": "Grass",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Phantom Force",
+    "Type": "Ghost",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user is semi-invulnerable during the first turn and attacks during the second turn. This attack goes through Protect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Play Rough",
+    "Type": "Fairy",
+    "Power": 90,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "Has a 10% chance to lower the opponent's Attack by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Raging Bull",
+    "Type": "Normal",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "This move's type can change between Fighting, Fire, or Water depending on the user's form. This attack also destroys protective barriers in play.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Sacred Sword",
+    "Type": "Fighting",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Ignores the opponent's stat changes.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Take Down",
+    "Type": "Normal",
+    "Power": 90,
+    "Accuracy": 85,
+    "PP": 20,
+    "Effect": "The user also takes recoil damage equal to 25% of the damage inflicted.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Wild Charge",
+    "Type": "Electric",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "The user also takes recoil damage equal to 25% of the damage inflicted.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Bug Buzz",
+    "Type": "Bug",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Has a 10% chance to lower the opponent's Special Defense by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Earth Power",
+    "Type": "Ground",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Has a 10% chance to lower the opponent's Special Defense by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Energy Ball",
+    "Type": "Grass",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Has a 10% chance to lower the opponent's Special Defense by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Flamethrower",
+    "Type": "Fire",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 10% chance to burn opponents.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Hyper Voice",
+    "Type": "Normal",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "No additional effect.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Ice Beam",
+    "Type": "Ice",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Has a 10% chance to freeze the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Muddy Water",
+    "Type": "Water",
+    "Power": 90,
+    "Accuracy": 85,
+    "PP": 10,
+    "Effect": "Has a 30% chance to lower the opponent's Accuracy by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Pollen Puff",
+    "Type": "Bug",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "This attacks heals instead if used on an ally.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Psychic",
+    "Type": "Psychic",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Has a 10% chance to lower the opponent's Special Defense by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Revelation Dance",
+    "Type": "Normal",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "The move's type changes based on the user's primary type.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Sludge Bomb",
+    "Type": "Poison",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Has a 30% chance to poison the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Surf",
+    "Type": "Water",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "This attack damages opponents currently using Dive.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Thunderbolt",
+    "Type": "Electric",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 10% chance to paralyze the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Uproar",
+    "Type": "Normal",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user uses the same attack for 3 turns, no Pokemon can fall asleep during this time.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Body Slam",
+    "Type": "Normal",
+    "Power": 85,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 30% chance to paralyze opponents.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Bounce",
+    "Type": "Flying",
+    "Power": 85,
+    "Accuracy": 85,
+    "PP": 5,
+    "Effect": "The user is semi-invulnerable during the first turn and attacks during the second turn. Has a 30% chance to paralyze opponents. If the target uses Gust, Helping Hand, Hurricane, Sky Uppercut, Smack Down, Thousand Arrows, Thunder, Toxic (if used by a Poison-type Pokemon), or Twister, the move will hit even if the user is in a semi-invulnerable turn.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Icicle Crash",
+    "Type": "Ice",
+    "Power": 85,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "Has a 30% chance of causing the opponent to flinch.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Kowtow Cleave",
+    "Type": "Dark",
+    "Power": 85,
+    "PP": 10,
+    "Effect": "This attack will never miss.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Liquidation",
+    "Type": "Water",
+    "Power": 85,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Has a 20% chance to lower the opponent's Defense by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Psychic Fangs",
+    "Type": "Psychic",
+    "Power": 85,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "This attack destroys protective barriers in play.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Dragon Pulse",
+    "Type": "Dragon",
+    "Power": 85,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "No additional effect.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Night Daze",
+    "Type": "Dark",
+    "Power": 85,
+    "Accuracy": 95,
+    "PP": 10,
+    "Effect": "Has a 40% chance to lower the opponent's Accuracy by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Aqua Step",
+    "Type": "Water",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Increases the user's Speed by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Body Press",
+    "Type": "Fighting",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Uses the user's Defense stat to calculate offensive damage instead of the Attack stat.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Crunch",
+    "Type": "Dark",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 20% chance to lower the opponent's Defense by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Dig",
+    "Type": "Ground",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user is semi-invulnerable during the first turn and then attacks during the second turn. If the target uses Helping Hand, Magnitutude, Earthquake, Fissure, or Toxic (if used by a Poison-type Pokemon), the move will still hit even if the user is in a semi-invulnerable turn.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Dive",
+    "Type": "Water",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user is semi-invulnerable during the first turn and attacks during the second turn. If the target uses Helping Hand, Surf, Toxic (if used by a Poison-type Pokemon), or Whirlpool, the move will still hit even if the user is in a semi-invulnerable turn.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Dragon Claw",
+    "Type": "Dragon",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Drill Peck",
+    "Type": "Flying",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Drill Run",
+    "Type": "Ground",
+    "Power": 80,
+    "Accuracy": 95,
+    "PP": 10,
+    "Effect": "This attack has a 1-stage increased Critical Hit ratio.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Extreme Speed",
+    "Type": "Normal",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "Has an increased Speed priority of 2, allowing it to go faster than most moves. If multiple Pokemon use a move with the same Speed priority, the one with higher Speed will go first.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "False Surrender",
+    "Type": "Dark",
+    "Power": 80,
+    "PP": 10,
+    "Effect": "This attack will never miss.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Fire Lash",
+    "Type": "Fire",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Lowers the opponent's Defense stat by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Grav Apple",
+    "Type": "Grass",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Lowers the opponent's Defense by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Ice Spinner",
+    "Type": "Ice",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "The move destroys any terrain, and does not fail even if the ground hasn't been turned into a terrain.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Iron Head",
+    "Type": "Steel",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 30% chance of causing the opponent to flinch.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Jaw Lock",
+    "Type": "Dark",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Prevents both the user and the opponent from escaping until one of them faints.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Leech Life",
+    "Type": "Bug",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user recovers half the damage inflicted as HP.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Lunge",
+    "Type": "Bug",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Lowers the opponent's Attack by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Order Up",
+    "Type": "Dragon",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Raises a specific stat by one stage depending on the form of Tatsugiri in the user's mouth: Attack with Curly Form, Defense with Droopy Form. Speed with Stretchy Form.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Poison Jab",
+    "Type": "Poison",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Has a 30% chance to poison the opponent.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Seed Bomb",
+    "Type": "Grass",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Slam",
+    "Type": "Normal",
+    "Power": 80,
+    "Accuracy": 75,
+    "PP": 20,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Strength",
+    "Type": "Normal",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Throat Chop",
+    "Type": "Dark",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "The user stops the opponent from using Sound-based moves for two turns.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Waterfall",
+    "Type": "Water",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 20% chance of causing the opponent to flinch.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "X-Scissor",
+    "Type": "Bug",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Zen Headbutt",
+    "Type": "Psychic",
+    "Power": 80,
+    "Accuracy": 90,
+    "PP": 15,
+    "Effect": "Has a 20% chance of causing the opponent to flinch.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Zing Zap",
+    "Type": "Electric",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Has a 30% chance of causing the opponent to flinch.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Apple Acid",
+    "Type": "Grass",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Lowers the opponent's Special Defense by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Aura Sphere",
+    "Type": "Fighting",
+    "Power": 80,
+    "PP": 20,
+    "Effect": "This attack will never miss.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Dark Pulse",
+    "Type": "Dark",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 20% chance of causing the opponent to flinch.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Dazzling Gleam",
+    "Type": "Fairy",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "No additional effect.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Discharge",
+    "Type": "Electric",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Hits all Pokemon on the field and has a 30% chance to paralyze.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Expanding Force",
+    "Type": "Psychic",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Increases damage and hits both opponents while on Psychic Terrain by 50%.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Extrasensory",
+    "Type": "Psychic",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Has a 10% chance of causing the opponent to flinch.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Fiery Dance",
+    "Type": "Fire",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Has a 50% chance to increase the user's Special Attack by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Fire Pledge",
+    "Type": "Fire",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "If used during double battles with Grass Pledge, the move damages the opponents by 12.5% of their max HP for four turns. Fire-type oppponents will not receive damage. If used during double battles with Water Pledge, the move doubles the probability of moves with Secondary Effects for four turns.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Flash Cannon",
+    "Type": "Steel",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Has a 10% chance to lower the opponent's Special Defense by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Grass Pledge",
+    "Type": "Grass",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "If used during double battles with Fire Pledge, the move damages the opponents by 12.5% of their max HP for four turns. Fire-type oppponents will not receive damage. If used during double battles with Water Pledge, the move reduces the opponent's speed by 75% for four turns.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Lava Plume",
+    "Type": "Fire",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 30% chance to burn the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Lumina Crash",
+    "Type": "Psychic",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Lowers the opponent's Special Defense stat by two stages.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Overdrive",
+    "Type": "Electric",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "No additional effect.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Power Gem",
+    "Type": "Rock",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "No additional effect.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Psyshock",
+    "Type": "Psychic",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "This attack inflicts physical damage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Shadow Ball",
+    "Type": "Ghost",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 20% chance to lower the opponent's Special Defense by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Tera Blast",
+    "Type": "Normal",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "When used while the user is Terastallized, this move's type changes depending on the its Tera Type. Tera Blast becomes a physical move if the user's Attack stat is higher, while it becomes a special move if the user's Special Attack stat is higher.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Torch Song",
+    "Type": "Fire",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Increases the user's Special Attack stat by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Tri Attack",
+    "Type": "Normal",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Has a 20% chance to burn, freeze, or paralyze the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Water Pledge",
+    "Type": "Water",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "If used in Double or Triple Battles with Fire Pledge, this move doubles the probability of moves with Secondary Effects for four turns. Fire type opponents don't receive damage. If used in Double or Triple Battles with Grass Pledge, lowers the opponents Speed by one stage for four turns.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Brick Break",
+    "Type": "Fighting",
+    "Power": 75,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "This attack destroys protective barriers in play.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Crush Claw",
+    "Type": "Normal",
+    "Power": 75,
+    "Accuracy": 95,
+    "PP": 10,
+    "Effect": "Has a 50% chance to lower the opponent's Defense by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Drain Punch",
+    "Type": "Fighting",
+    "Power": 75,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user recovers half the damage inflicted as HP.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Fire Punch",
+    "Type": "Fire",
+    "Power": 75,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 10% chance to burn opponents.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Horn Leech",
+    "Type": "Grass",
+    "Power": 75,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user recovers half the damage inflicted as HP.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Ice Punch",
+    "Type": "Ice",
+    "Power": 75,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 10% chance to freeze the opponent.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Razor Shell",
+    "Type": "Water",
+    "Power": 75,
+    "Accuracy": 95,
+    "PP": 10,
+    "Effect": "Has a 50% chance to lower the opponent's Defense by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Rock Slide",
+    "Type": "Rock",
+    "Power": 75,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "Has a 30% chance of causing the opponent to flinch.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Spirit Break",
+    "Type": "Fairy",
+    "Power": 75,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Lowers the opponent's Special Attack by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Stomping Tantrum",
+    "Type": "Ground",
+    "Power": 75,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Doubles the damage if the user's previous move failed.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Thunder Punch",
+    "Type": "Electric",
+    "Power": 75,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 10% chance to paralyze the opponent.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Air Slash",
+    "Type": "Flying",
+    "Power": 75,
+    "Accuracy": 95,
+    "PP": 20,
+    "Effect": "Has a 30% chance of causing the opponent to flinch.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Giga Drain",
+    "Type": "Grass",
+    "Power": 75,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user recovers half the damage inflicted as HP.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Mystical Fire",
+    "Type": "Fire",
+    "Power": 75,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Lowers the opponent's Special Attack by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Aqua Cutter",
+    "Type": "Water",
+    "Power": 70,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "This attack has an increased Critical Hit ratio.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Cross Poison",
+    "Type": "Poison",
+    "Power": 70,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "This attack has a 1-stage increased Critical Hit ratio. Has a 10% to poison the target.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Facade",
+    "Type": "Normal",
+    "Power": 70,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Doubles the damage if the user is afflicted with Paralysis, Burn, Poison, or Toxic Poison.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Flower Trick",
+    "Type": "Grass",
+    "Power": 70,
+    "PP": 10,
+    "Effect": "This attack will always land a critical hit and never miss.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Headbutt",
+    "Type": "Normal",
+    "Power": 70,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 30% chance of causing the opponent to flinch.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Night Slash",
+    "Type": "Dark",
+    "Power": 70,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "This attack has a 1-stage increased Critical Hit ratio.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Psycho Cut",
+    "Type": "Psychic",
+    "Power": 70,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "This attack has a 1-stage increased Critical Hit ratio.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Retaliate",
+    "Type": "Normal",
+    "Power": 70,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "Doubles the damage if an ally fainted in the previous turn.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Shadow Claw",
+    "Type": "Ghost",
+    "Power": 70,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "This attack has a 1-stage increased Critical Hit ratio.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Skitter Smack",
+    "Type": "Bug",
+    "Power": 70,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "Lowers the opponent's Special Attack by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Slash",
+    "Type": "Normal",
+    "Power": 70,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "This attack has a 1-stage increased Critical Hit ratio.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Smart Strike",
+    "Type": "Steel",
+    "Power": 70,
+    "PP": 10,
+    "Effect": "This attack will never miss.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Steel Wing",
+    "Type": "Steel",
+    "Power": 70,
+    "Accuracy": 90,
+    "PP": 25,
+    "Effect": "Has a 10% chance to increase the user's Defense by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Sucker Punch",
+    "Type": "Dark",
+    "Power": 70,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "The user damages the opponent if they're about to use a damaging move. This move fails if used after the opponent made their move or if they're not preparing to attack.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Trop Kick",
+    "Type": "Grass",
+    "Power": 70,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Lowers the opponent's Attack by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "U-turn",
+    "Type": "Bug",
+    "Power": 70,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "The user switches out with another Pokemon in the party.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Freeze-Dry",
+    "Type": "Ice",
+    "Power": 70,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Will always be super effective against Water type Pokemon.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Volt Switch",
+    "Type": "Electric",
+    "Power": 70,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "The user switches out with another Pokemon in the party.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Fire Fang",
+    "Type": "Fire",
+    "Power": 65,
+    "Accuracy": 95,
+    "PP": 15,
+    "Effect": "Has a 10% chance of causing the opponent to flinch or burn opponents.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Horn Attack",
+    "Type": "Normal",
+    "Power": 65,
+    "Accuracy": 100,
+    "PP": 25,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Ice Fang",
+    "Type": "Ice",
+    "Power": 65,
+    "Accuracy": 95,
+    "PP": 15,
+    "Effect": "Has a 10% chance causing the opponent to flinch or freeze.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Knock Off",
+    "Type": "Dark",
+    "Power": 65,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Removes the opponent's held item, preventing its use. The damage increases by 50% if successful.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Low Sweep",
+    "Type": "Fighting",
+    "Power": 65,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Lowers the opponent's Speed by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Stomp",
+    "Type": "Normal",
+    "Power": 65,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Has a 30% chance of causing the opponent to flinch.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Thunder Fang",
+    "Type": "Electric",
+    "Power": 65,
+    "Accuracy": 95,
+    "PP": 15,
+    "Effect": "Has a 10% chance to paralyze the opponent or cause them to flinch.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Aurora Beam",
+    "Type": "Ice",
+    "Power": 65,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Has a 10% chance to lower the opponent's Attack by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Brine",
+    "Type": "Water",
+    "Power": 65,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Doubles the damage if the user's HP is less than 50%.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Bubble Beam",
+    "Type": "Water",
+    "Power": 65,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Has a 10% chance to lower the opponent's Speed by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Hex",
+    "Type": "Ghost",
+    "Power": 65,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The move doubles the damage to 130 if the target has a status condition.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Parabolic Charge",
+    "Type": "Electric",
+    "Power": 65,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "The user recovers half the damage inflicted as HP.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Psybeam",
+    "Type": "Psychic",
+    "Power": 65,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Has a 10% chance to confuse the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Sludge",
+    "Type": "Poison",
+    "Power": 65,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Has a 30% chance to poison the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Spark",
+    "Type": "Electric",
+    "Power": 65,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Has a 30% chance to paralyze the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Venoshock",
+    "Type": "Poison",
+    "Power": 65,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Doubles the damage if the opponent is poisoned.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Aerial Ace",
+    "Type": "Flying",
+    "Power": 60,
+    "PP": 20,
+    "Effect": "The attack never misses unless the opponent uses the following moves: Protect, Detect, Bounce, Dig, Dive, Fly, Phantom Force, Shadow Force, and Sky Drop.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Assurance",
+    "Type": "Dark",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Doubles the damage if the target has already been damaged earlier in the same turn.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Avalanche",
+    "Type": "Ice",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Doubles the damage if the target has already been damaged in the same turn.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Bite",
+    "Type": "Dark",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 25,
+    "Effect": "Has a 30% chance of causing the opponent to flinch.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Breaking Swipe",
+    "Type": "Dragon",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Lowers the Attack stats of all opponents hit by the attack by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Brutal Swing",
+    "Type": "Dark",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Bug Bite",
+    "Type": "Bug",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Removes the target's Berry and uses its effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Bulldoze",
+    "Type": "Ground",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Lowers the opponent's Speed by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Circle Throw",
+    "Type": "Fighting",
+    "Power": 60,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "Forces the opponent to switch Pokemon. If used against a single wild Pokemon, this ends the battle.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Covet",
+    "Type": "Normal",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 25,
+    "Effect": "If the user does not have a held item, it will steal that of the opponent it attacks. In a trainer battle, the stolen item will be returned at the end of the battle.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Dragon Tail",
+    "Type": "Dragon",
+    "Power": 60,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "Forces the opponent to switch Pokemon. If used against a single wild Pokemon, this ends the battle.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Flame Wheel",
+    "Type": "Fire",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 25,
+    "Effect": "Has a 10% chance to burn opponents.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Flip Turn",
+    "Type": "Water",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "The user switches out from battle with another Pokemon in the party.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Force Palm",
+    "Type": "Fighting",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Has a 30% chance to paralyze opponents.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Jet Punch",
+    "Type": "Water",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has an increased Speed priority of 1, allowing it to go faster than most moves. If multiple Pokemon use a move with the same Speed priority, the one with higher Speed will go first.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Pluck",
+    "Type": "Flying",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "The user removes the target's Berry and uses its effect instead.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Rock Tomb",
+    "Type": "Rock",
+    "Power": 60,
+    "Accuracy": 95,
+    "PP": 15,
+    "Effect": "Lowers the opponent's Speed by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Shadow Punch",
+    "Type": "Ghost",
+    "Power": 60,
+    "PP": 20,
+    "Effect": "This attack will never miss.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Thief",
+    "Type": "Dark",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 25,
+    "Effect": "If the user does not have a held item, it will steal that of the opponent it attacks. In a trainer battle, the stolen item will be returned at the end of the battle.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Wing Attack",
+    "Type": "Flying",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 35,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Air Cutter",
+    "Type": "Flying",
+    "Power": 60,
+    "Accuracy": 95,
+    "PP": 25,
+    "Effect": "This attack has a 1-stage increased Critical Hit ratio.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Ancient Power",
+    "Type": "Rock",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 5,
+    "Effect": "Has a 10% chance to increase Attack, Defense, Sp. Attack, Sp. Defense, and Speed by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Dragon Breath",
+    "Type": "Dragon",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Has a 30% chance to paralyze opponents.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Frost Breath",
+    "Type": "Ice",
+    "Power": 60,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "This attack is always a critical hit.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Incinerate",
+    "Type": "Fire",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Removes the opponent's held Berry.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Magical Leaf",
+    "Type": "Grass",
+    "Power": 60,
+    "PP": 20,
+    "Effect": "This attack will never miss.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Round",
+    "Type": "Normal",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Damage increases if allies used Round in the same turn.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Shock Wave",
+    "Type": "Electric",
+    "Power": 60,
+    "PP": 20,
+    "Effect": "This attack will never miss.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Swift",
+    "Type": "Normal",
+    "Power": 60,
+    "PP": 20,
+    "Effect": "This attack will never miss.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Water Pulse",
+    "Type": "Water",
+    "Power": 60,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Has a 20% chance to confuse the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Acrobatics",
+    "Type": "Flying",
+    "Power": 55,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "If the user is not holding an item, deals double damage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Razor Leaf",
+    "Type": "Grass",
+    "Power": 55,
+    "Accuracy": 95,
+    "PP": 25,
+    "Effect": "This attack has a 1-stage increased Critical Hit ratio.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Vise Grip",
+    "Type": "Normal",
+    "Power": 55,
+    "Accuracy": 100,
+    "PP": 30,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Electroweb",
+    "Type": "Electric",
+    "Power": 55,
+    "Accuracy": 95,
+    "PP": 15,
+    "Effect": "Lowers the opponent's Speed by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Icy Wind",
+    "Type": "Ice",
+    "Power": 55,
+    "Accuracy": 95,
+    "PP": 15,
+    "Effect": "Lowers the opponents Speed by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Mud Shot",
+    "Type": "Ground",
+    "Power": 55,
+    "Accuracy": 95,
+    "PP": 15,
+    "Effect": "Lowers the opponent's Speed by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Snarl",
+    "Type": "Dark",
+    "Power": 55,
+    "Accuracy": 95,
+    "PP": 15,
+    "Effect": "Lowers the opponent's Special Attack by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Dragon Darts",
+    "Type": "Dragon",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "In Single Battles, attacks the opponent twice. In Double Battles, attacks each opponent once. If one of the two opponents is using a protection move or is a Fairy type, the user hits the opponent that isn't protected twice.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Fell Stinger",
+    "Type": "Bug",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 25,
+    "Effect": "Increases the user's Attack by three stages if it knocks out the target.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Flame Charge",
+    "Type": "Fire",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Increases the user's Speed by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Last Respects",
+    "Type": "Ghost",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The move's base power is increased by 50 for each fainted ally in the user's party.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Metal Claw",
+    "Type": "Steel",
+    "Power": 50,
+    "Accuracy": 95,
+    "PP": 35,
+    "Effect": "Has a 10% chance to increase the user's Attack by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Payback",
+    "Type": "Dark",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Doubles the damage if the user moves after the target.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Poison Fang",
+    "Type": "Poison",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 50% chance to badly poison the target.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Poison Tail",
+    "Type": "Poison",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 25,
+    "Effect": "This attack has an increased Critical Hit ratio and has a 10% chance to poison the opponent.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Pounce",
+    "Type": "Bug",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Lowers the opponent's Speed by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Rage Fist",
+    "Type": "Ghost",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user converts its rage into energy to attack. The more times the user has been hit by attacks, the greater the move’s power.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Rock Throw",
+    "Type": "Rock",
+    "Power": 50,
+    "Accuracy": 90,
+    "PP": 15,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Smack Down",
+    "Type": "Rock",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Removes the target's Ground type immunity, and damages Pokemon using Fly or Bounce while cancelling them as well. Also damages Pokemon using Sky Drop but does not cancel the move.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Struggle",
+    "Type": "Normal",
+    "Power": 50,
+    "PP": 1,
+    "Effect": "The user takes damage equal to 25% of its max HP.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Trailblaze",
+    "Type": "Grass",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Increases the user's Speed by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Charge Beam",
+    "Type": "Electric",
+    "Power": 50,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "Has a 70% chance to increase the user's Special Attack by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Chilling Water",
+    "Type": "Water",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Lowers the opponent's Attack by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Clear Smog",
+    "Type": "Poison",
+    "Power": 50,
+    "PP": 15,
+    "Effect": "Removes all of the opponent's stat changes.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Confusion",
+    "Type": "Psychic",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 25,
+    "Effect": "Has a 10% chance to confuse opponents.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Draining Kiss",
+    "Type": "Fairy",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user recovers 75% of the damage inflicted.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Snore",
+    "Type": "Normal",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "This attack can only be used while asleep and has a 30% chance of causing the opponent to flinch.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Struggle Bug",
+    "Type": "Bug",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Lowers the opponent's Special Attack by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Terrain Pulse",
+    "Type": "Normal",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "This move's type becomes the same as the type of terrain it's on and doubles its damage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Weather Ball",
+    "Type": "Normal",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "This attack's type and power depends on the weather in the battlefield.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Vine Whip",
+    "Type": "Grass",
+    "Power": 45,
+    "Accuracy": 100,
+    "PP": 25,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Accelerock",
+    "Type": "Rock",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Has an increased Speed priority of 1, allowing it to go faster than most moves. If multiple Pokemon use a move with the same Speed priority, the one with higher Speed will go first.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Aqua Jet",
+    "Type": "Water",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Has an increased Speed priority of 1, allowing it to go faster than most moves. If multiple Pokemon use a move with the same Speed priority, the one with higher Speed will go first.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Bullet Punch",
+    "Type": "Steel",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 30,
+    "Effect": "Has an increased Speed priority of 1, allowing it to go faster than most moves. If multiple Pokemon use a move with the same Speed priority, the one with higher Speed will go first.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Dual Wingbeat",
+    "Type": "Flying",
+    "Power": 40,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Fake Out",
+    "Type": "Normal",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Always causes the opponent to flinch, but only works when used on the first turn the user can attack after being sent out, and fails otherwise. Has an increased Speed priority of 3, allowing it to go faster than most moves. If multiple Pokemon use a move with the same Speed priority, the one with higher Speed will go first.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "False Swipe",
+    "Type": "Normal",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 40,
+    "Effect": "Leaves the target with at least 1 HP.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Fury Cutter",
+    "Type": "Bug",
+    "Power": 40,
+    "Accuracy": 95,
+    "PP": 20,
+    "Effect": "This attack increases if it hits consecutively.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Ice Shard",
+    "Type": "Ice",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 30,
+    "Effect": "Has an increased Speed priority of 1, allowing it to go faster than most moves. If multiple Pokemon use a move with the same Speed priority, the one with higher Speed will go first.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Leafage",
+    "Type": "Grass",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 40,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Mach Punch",
+    "Type": "Fighting",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 30,
+    "Effect": "Has an increased Speed priority of 1, allowing it to go faster than most moves. If multiple Pokemon use a move with the same Speed priority, the one with higher Speed will go first.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Pay Day",
+    "Type": "Normal",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "The user gains money after battle in the main game.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Pound",
+    "Type": "Normal",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 35,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Quick Attack",
+    "Type": "Normal",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 30,
+    "Effect": "Has an increased Speed priority of 1, allowing it to go faster than most moves. If multiple Pokemon use a move with the same Speed priority, the one with higher Speed will go first.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Rock Smash",
+    "Type": "Fighting",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 50% chance to lower the opponent's Defense by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Salt Cure",
+    "Type": "Rock",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Delas damage, then deals 1\/8 of the target's max HP as residual damage per turn. Residual damage is doubled if the target is a Steel or Water type.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Scratch",
+    "Type": "Normal",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 35,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Shadow Sneak",
+    "Type": "Ghost",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 30,
+    "Effect": "Has an increased Speed priority of 1, allowing it to go faster than most moves. If multiple Pokemon use a move with the same Speed priority, the one with higher Speed will go first.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Tackle",
+    "Type": "Normal",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 35,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Acid",
+    "Type": "Poison",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 30,
+    "Effect": "Has a 10% chance to lower the opponent's Special Defense by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Acid Spray",
+    "Type": "Poison",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Lowers the opponent's Special Defense by two stages.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Disarming Voice",
+    "Type": "Fairy",
+    "Power": 40,
+    "PP": 15,
+    "Effect": "This attack will never miss.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Echoed Voice",
+    "Type": "Normal",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Increases power by 100% when used consecutively. The move's base power starts at 160 and caps at 200.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Ember",
+    "Type": "Fire",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 25,
+    "Effect": "Has a 10% chance to burn opponents.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Fairy Wind",
+    "Type": "Fairy",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 30,
+    "Effect": "No additional effect.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Gust",
+    "Type": "Flying",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 35,
+    "Effect": "Can hit opponents during the semi-invulnerable turn of Fly.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Mega Drain",
+    "Type": "Grass",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "The user recovers half the damage inflicted as HP.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Powder Snow",
+    "Type": "Ice",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 25,
+    "Effect": "Has a 10% chance to freeze the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Thunder Shock",
+    "Type": "Electric",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 30,
+    "Effect": "Has a 10% chance to paralyze the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Twin Beam",
+    "Type": "Psychic",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "The user attacks twice in a row.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Twister",
+    "Type": "Dragon",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Doubles the damage if the opponent is using Fly; has a 20% chance to cause the opponent to flinch.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Vacuum Wave",
+    "Type": "Fighting",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 30,
+    "Effect": "Has an increased Speed priority of 1, allowing it to go faster than most moves. If multiple Pokemon use a move with the same Speed priority, the one with higher Speed will go first.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Water Gun",
+    "Type": "Water",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 25,
+    "Effect": "No additional effect.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Double Hit",
+    "Type": "Normal",
+    "Power": 35,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "The user attacks twice in a row.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Peck",
+    "Type": "Flying",
+    "Power": 35,
+    "Accuracy": 100,
+    "PP": 35,
+    "Effect": "No additional effect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Sand Tomb",
+    "Type": "Ground",
+    "Power": 35,
+    "Accuracy": 85,
+    "PP": 15,
+    "Effect": "Inflicts damage equal to 1\/8 of the opponent's max HP each turn and prevents them from fleeing and switching out for 4-5 turns, or until the user switches out or faints.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Fire Spin",
+    "Type": "Fire",
+    "Power": 35,
+    "Accuracy": 85,
+    "PP": 15,
+    "Effect": "Inflicts damage equal to 1\/8 of the opponent's max HP each turn and prevents them from fleeing and switching out for 4-5 turns, or until the user switches out or faints.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Whirlpool",
+    "Type": "Water",
+    "Power": 35,
+    "Accuracy": 85,
+    "PP": 15,
+    "Effect": "Inflicts damage equal to 1\/8 of the opponent's max HP each turn and prevents them from fleeing and switching out for 4-5 turns, or until the user switches out or faints.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Astonish",
+    "Type": "Ghost",
+    "Power": 30,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "Has a 30% chance of causing the opponent to flinch.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Double Kick",
+    "Type": "Fighting",
+    "Power": 30,
+    "Accuracy": 100,
+    "PP": 30,
+    "Effect": "The user attacks twice in a row.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Feint",
+    "Type": "Normal",
+    "Power": 30,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Ignores and removes the opponent's Protect and Detect.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Lick",
+    "Type": "Ghost",
+    "Power": 30,
+    "Accuracy": 100,
+    "PP": 30,
+    "Effect": "Has a 30% chance to paralyze opponents.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Mortal Spin",
+    "Type": "Poison",
+    "Power": 30,
+    "Accuracy": 100,
+    "PP": 15,
+    "Effect": "The user performs a spin attack that can also eliminate the effects of such moves as Bind, Wrap, and Leech Seed. This also poisons opposing Pokémon.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Rollout",
+    "Type": "Rock",
+    "Power": 30,
+    "Accuracy": 90,
+    "PP": 20,
+    "Effect": "The user uses the same attack for 5 turns, doubling the damage for each successful hit. Using Defense Curl beforehand doubles the damage and its maximum base power is 480.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Triple Dive",
+    "Type": "Water",
+    "Power": 30,
+    "Accuracy": 95,
+    "PP": 10,
+    "Effect": "The user attacks thrice in a row.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Smog",
+    "Type": "Poison",
+    "Power": 30,
+    "Accuracy": 70,
+    "PP": 20,
+    "Effect": "Has a 40% chance to poison the opponent.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Bone Rush",
+    "Type": "Ground",
+    "Power": 25,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "The user attacks 2-5 times nonstop. Has a 37.5% chance for 2 hits, 37.5% chance for 3 hits, 12.5% chance for 4 hits, and a 12.5% chance for 5 hits.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Bullet Seed",
+    "Type": "Grass",
+    "Power": 25,
+    "Accuracy": 100,
+    "PP": 30,
+    "Effect": "The user attacks 2-5 times nonstop. Has a 37.5% chance for 2 hits, 37.5% chance for 3 hits, 12.5% chance for 4 hits, and a 12.5% chance for 5 hits.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Icicle Spear",
+    "Type": "Ice",
+    "Power": 25,
+    "Accuracy": 100,
+    "PP": 30,
+    "Effect": "The user attacks 2-5 times nonstop. Has a 37.5% chance for 2 hits, 37.5% chance for 3 hits, 12.5% chance for 4 hits, and a 12.5% chance for 5 hits.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Pin Missile",
+    "Type": "Bug",
+    "Power": 25,
+    "Accuracy": 95,
+    "PP": 20,
+    "Effect": "The user attacks 2-5 times nonstop. Has a 37.5% chance for 2 hits, 37.5% chance for 3 hits, 12.5% chance for 4 hits, and a 12.5% chance for 5 hits.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Rock Blast",
+    "Type": "Rock",
+    "Power": 25,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "The user attacks 2-5 times nonstop. Has a 37.5% chance for 2 hits, 37.5% chance for 3 hits, 12.5% chance for 4 hits, and a 12.5% chance for 5 hits.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Scale Shot",
+    "Type": "Dragon",
+    "Power": 25,
+    "Accuracy": 90,
+    "PP": 20,
+    "Effect": "Increases the user's Speed by one stage and lowers the user's Defense by one stage.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Nuzzle",
+    "Type": "Electric",
+    "Power": 20,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Paralyzes the opponent.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Population Bomb",
+    "Type": "Normal",
+    "Power": 20,
+    "Accuracy": 90,
+    "PP": 10,
+    "Effect": "The user attacks 1-10 times. Accuracy is checked on each strike.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Power Trip",
+    "Type": "Dark",
+    "Power": 20,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Damages increases by 100% for each stage a stat was increased by the user.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Rapid Spin",
+    "Type": "Normal",
+    "Power": 20,
+    "Accuracy": 100,
+    "PP": 40,
+    "Effect": "The user removes moves that trap Pokemon and increases the user's Speed by one stage. Moves that trap Pokemon are the following: Bind, Clamp, Fire Spin, Infestation, Leech Seed, Magma Storm, Sand Tomb, Snap Trap, Spikes, Stealth Rock, Sticky Web, Toxic Spikes, Whirlpool, Wrap.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Absorb",
+    "Type": "Grass",
+    "Power": 20,
+    "Accuracy": 100,
+    "PP": 25,
+    "Effect": "The user recovers half the damage inflicted as HP.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Infestation",
+    "Type": "Bug",
+    "Power": 20,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "Inflicts damage equal to 1\/8 of the opponent's max HP each turn and prevents them from fleeing and switching out for 4-5 turns, or until the user switches out or faints.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Mud-Slap",
+    "Type": "Ground",
+    "Power": 20,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Lowers the opponent's Accuracy by one stage.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Stored Power",
+    "Type": "Psychic",
+    "Power": 20,
+    "Accuracy": 100,
+    "PP": 10,
+    "Effect": "Damages increases by 100% for each stage a stat was increased by the user.",
+    "Category": "Special"
+  },
+  {
+    "Move": "Fury Swipes",
+    "Type": "Normal",
+    "Power": 18,
+    "Accuracy": 80,
+    "PP": 15,
+    "Effect": "The user attacks 2-5 times nonstop. Has a 37.5% chance for 2 hits, 37.5% chance for 3 hits, 12.5% chance for 4 hits, and a 12.5% chance for 5 hits.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Arm Thrust",
+    "Type": "Fighting",
+    "Power": 15,
+    "Accuracy": 100,
+    "PP": 20,
+    "Effect": "The user attacks consecutively with a 37.5% chance for 2 hits, 37.5% chance for 3 hits, 12.5% chance for 4 hits, and a 12.5% chance for 5 hits.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Bind",
+    "Type": "Normal",
+    "Power": 15,
+    "Accuracy": 85,
+    "PP": 20,
+    "Effect": "Inflicts damage equal to 1\/8 of the opponent's max HP each turn and prevents them from fleeing and switching out for 4-5 turns, or until the user switches out or faints.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Fury Attack",
+    "Type": "Normal",
+    "Power": 15,
+    "Accuracy": 85,
+    "PP": 20,
+    "Effect": "The user attacks 2-5 times nonstop. Has a 37.5% chance for 2 hits, 37.5% chance for 3 hits, 12.5% chance for 4 hits, and a 12.5% chance for 5 hits.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Poison Sting",
+    "Type": "Poison",
+    "Power": 15,
+    "Accuracy": 100,
+    "PP": 35,
+    "Effect": "Has a 30% chance to poison the opponent.",
+    "Category": "Physical"
+  },
+  {
+    "Move": "Wrap",
+    "Type": "Normal",
+    "Power": 15,
+    "Accuracy": 90,
+    "PP": 20,
+    "Effect": "Traps the opponent and deals damage equal to 1\/8 of the target's maximum HP each turn.",
+    "Category": "Physical"
+  }
+]
