@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33312.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonTypeMovesetAnalyzer", "PokemonTypeMovesetAnalyzer.csproj", "{25B23A7D-9D4A-4DD3-A56A-7EBDA2FE061F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonTypeMoveset.Analyzer", ".\PokemonTypeMoveset.Analyzer\PokemonTypeMoveset.Analyzer.csproj", "{25B23A7D-9D4A-4DD3-A56A-7EBDA2FE061F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonTypeMovesetDataTool", "..\PokemonTypeMovesetDataTool\PokemonTypeMovesetDataTool.csproj", "{ABCC7329-297D-4028-8571-6C2EBA54CCC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonTypeMoveset.DataTool", ".\PokemonTypeMoveset.DataTool\PokemonTypeMoveset.DataTool.csproj", "{ABCC7329-297D-4028-8571-6C2EBA54CCC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonTypeMoveset.Models", ".\PokemonTypeMoveset.Models\PokemonTypeMoveset.Models.csproj", "{33909402-31F3-4090-88C5-3F685C96C5D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{ABCC7329-297D-4028-8571-6C2EBA54CCC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABCC7329-297D-4028-8571-6C2EBA54CCC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABCC7329-297D-4028-8571-6C2EBA54CCC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33909402-31F3-4090-88C5-3F685C96C5D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33909402-31F3-4090-88C5-3F685C96C5D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33909402-31F3-4090-88C5-3F685C96C5D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33909402-31F3-4090-88C5-3F685C96C5D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

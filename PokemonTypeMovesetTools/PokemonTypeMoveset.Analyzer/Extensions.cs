@@ -9,31 +9,6 @@ namespace PokemonTypeMovesetAnalyzer
     public static class Extensions
     {
         private static readonly string Comma = ",";
-        private static JsonSerializerOptions _jsonOptions;
-        public static JsonSerializerOptions JsonOptions
-        {
-            get
-            {
-                if (_jsonOptions == null)
-                {
-                    _jsonOptions = new JsonSerializerOptions();
-                    _jsonOptions.Converters.Add(new JsonStringEnumConverter());
-                }
-
-                return _jsonOptions;
-            }
-        }
-
-        public static T ReadResource<T>(this Assembly assembly, string resourceFilename) => JsonSerializer.Deserialize<T>(assembly.ReadResourceAsString(resourceFilename), JsonOptions);
-
-        public static string ReadResourceAsString(this Assembly assembly, string resourceFilename)
-        {
-            var fullResourcePath = assembly.GetManifestResourceNames()
-                .FirstOrDefault(resourceName => resourceName.EndsWith(resourceFilename));
-
-            using var streamReader = new StreamReader(assembly.GetManifestResourceStream(fullResourcePath));
-            return streamReader.ReadToEnd();
-        }
 
         public static string ToString(this byte[] bytes, Encoding encoding) => encoding.GetString(bytes);
 

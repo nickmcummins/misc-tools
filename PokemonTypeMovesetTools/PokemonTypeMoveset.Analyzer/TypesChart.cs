@@ -1,10 +1,9 @@
 ﻿using PokemonTypeMovesetAnalyzer.Models;
-using System.Reflection;
 using static PokemonTypeMovesetAnalyzer.Models.PokemonType;
 
 namespace PokemonTypeMovesetAnalyzer
 {
-    public class Data
+    public class TypesChart
     {
         public static ISet<PokemonType> Types = new HashSet<PokemonType>(Enum.GetValues<PokemonType>().ToList());
 
@@ -49,10 +48,5 @@ namespace PokemonTypeMovesetAnalyzer
             new(Steel, new[] { Fighting, Fire, Ground }),
             new(Water, new[] { Electric, Grass })
         });
-
-
-        public static readonly IDictionary<string, Move> MovesByName = Assembly.GetExecutingAssembly()
-            .ReadResource<IEnumerable<Move>>("VioletScarletMoves.json")
-            .ToDictionary(move => move.Name);
     }
 }

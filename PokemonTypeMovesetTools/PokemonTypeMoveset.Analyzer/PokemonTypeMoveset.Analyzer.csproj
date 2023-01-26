@@ -7,12 +7,15 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Data\json\Goodra.json" />
-    <None Remove="Data\json\VioletScarletMoves.json" />
+    <None Remove="Data\json\moves.json" />
     <None Remove="VioletScarletMoves.xlsx" />
     <None Remove="VioletScarletMoves.yaml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Data\json\Goodra.json" />
-    <EmbeddedResource Include="Data\json\VioletScarletMoves.json" />
+    <EmbeddedResource Include="Data\json\moves.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PokemonTypeMoveset.DataTool\PokemonTypeMoveset.DataTool.csproj" />
   </ItemGroup>
 </Project>

@@ -1,17 +1,16 @@
-﻿using AngleSharp.Html.Dom;
-using HtmlAgilityPack;
-using Rochas.ExcelToJson;
+﻿using HtmlAgilityPack;
+using PokemonTypeMoveset.DataTool;
 using TowerSoft.HtmlToExcel;
 
 namespace PokemonTypeMovesetDataTool
 {
-    public class HtmlTable
+    public class PokemonListHtmlTable : HtmlTable
     {
         private readonly string _htmlFilename;
         private string _html;
         private string _xlsxFilename;
 
-        public HtmlTable(string htmlFilename)
+        public PokemonListHtmlTable(string htmlFilename)
         {
             _htmlFilename = htmlFilename;
             _html = File.ReadAllText(_htmlFilename);
@@ -36,9 +35,9 @@ namespace PokemonTypeMovesetDataTool
             _html = sw.GetStringBuilder().ToString();
         }
 
-        public void ToXlsx()
+        public override string ToXlsx()
         {
-            _xlsxFilename = _htmlFilename.Replace(".html", ".xlsx");
+            var xlsxFilename = _htmlFilename.Replace(".html", ".xlsx");
             byte[] xlsxData;
             using (WorkbookBuilder workbookBuilder = new WorkbookBuilder())
             {
@@ -46,14 +45,9 @@ namespace PokemonTypeMovesetDataTool
                 xlsxData = workbookBuilder.GetAsByteArray();
             }
 
-            File.WriteAllBytes(_xlsxFilename, xlsxData);
-            Console.Out.WriteLine($"Wrote {_xlsxFilename} with size {xlsxData.Length} bytes.");
-        }
-
-        public string ToJson()
-        {
-            ToXlsx();
-            return ExcelToJsonParser.GetJsonStringFromTabular(new FileStream(_xlsxFilename, FileMode.OpenOrCreate));
+            File.WriteAllBytes(xlsxFilename, xlsxData);
+            Console.Out.WriteLine($"Wrote {xlsxFilename} with size {xlsxData.Length} bytes.");
+            return xlsxFilename;
         }
     }
 }
