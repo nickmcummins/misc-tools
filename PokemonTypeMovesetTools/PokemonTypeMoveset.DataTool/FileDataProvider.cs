@@ -23,7 +23,7 @@ namespace PokemonTypeMoveset.DataTool
 
         public async Task<IEnumerable<string>> GetMoveNames(string pokemonName)
         {
-            return PokemonLearnsets[pokemonName];
+            return await Task.Run(() => PokemonLearnsets[pokemonName]);
         }
 
         public static void PersistLearnsetsDatastore()
@@ -32,7 +32,7 @@ namespace PokemonTypeMoveset.DataTool
             Console.Out.WriteLine($"Attempting to update {learnsetDatastoreFilepath}.");
             var learnsetJson = PokemonLearnsets.ToJson();
             File.WriteAllText(learnsetDatastoreFilepath, learnsetJson);
-            Console.Out.WriteLine($"Wrote {learnsetDatastoreFilepath} with size {learnsetJson} bytes.");
+            Console.Out.WriteLine($"Wrote {learnsetDatastoreFilepath} with size {learnsetJson.Count()} bytes.");
         }
     }
 }

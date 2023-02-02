@@ -1,4 +1,5 @@
 ﻿using AngleSharp.Dom;
+using HtmlAgilityPack;
 using PokemonTypeMoveset.DataTool.Text.Json;
 using System.Reflection;
 using System.Text;
@@ -39,6 +40,12 @@ namespace PokemonTypeMoveset.DataTool
             } while (element.NextElementSibling != null);
 
             throw new Exception($"Could not find sibling {tagName} for <{element.TagName}>{element.TextContent}</{element.TagName}>.");
+        }
+
+        public static IEnumerable<HtmlNode> GetDescendantsByTagName(this HtmlNode htmlNode, string tagName)
+        {
+            return htmlNode.Descendants()
+                .Where(descendant => descendant.NodeType == HtmlNodeType.Element && descendant.Name == tagName);
         }
 
         public static void AddRange<T>(this ISet<T> set, IEnumerable<T> additionalItems)

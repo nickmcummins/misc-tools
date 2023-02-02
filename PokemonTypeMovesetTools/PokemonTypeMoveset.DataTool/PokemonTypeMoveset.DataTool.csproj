@@ -1,37 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
+  <PropertyGroup Label="ProjectProperties">
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="data\moves.json" />
-    <None Remove="data\pokemon-learnsets.json" />
-    <None Remove="data\pokemon-list.json" />
-  </ItemGroup>
-
-  <ItemGroup>
+  <ItemGroup Label="EmbeddedResourceIncludes">
     <EmbeddedResource Include="data\pokemon-learnsets.json" />
-    <EmbeddedResource Include="data\pokemon-list.json">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
+    <EmbeddedResource Include="data\pokemon-list.json" />
     <EmbeddedResource Include="data\moves.json" />
   </ItemGroup>
 
-  <ItemGroup>
+  <ItemGroup Label="NugetPackageDependencies">
     <PackageReference Include="ExcelToJsonParser" Version="1.0.6.3" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
     <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
     <PackageReference Include="TowerSoft.HtmlToExcel" Version="2.2.0" />
   </ItemGroup>
 
-  <ItemGroup>
+  <ItemGroup Label="ProjectDependencies">
     <ProjectReference Include="..\PokemonTypeMoveset.Models\PokemonTypeMoveset.Models.csproj" />
   </ItemGroup>
 

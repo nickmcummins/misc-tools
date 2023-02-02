@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
+  <PropertyGroup Label="ProjectProperties">
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
+  <ItemGroup Label="ProjectDependencies">
     <ProjectReference Include="..\PokemonTypeMoveset.DataTool\PokemonTypeMoveset.DataTool.csproj" />
   </ItemGroup>
 </Project>

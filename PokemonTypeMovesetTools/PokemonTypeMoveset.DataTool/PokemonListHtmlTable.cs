@@ -8,7 +8,6 @@ namespace PokemonTypeMovesetDataTool
     {
         private readonly string _htmlFilename;
         private string _html;
-        private string _xlsxFilename;
 
         public PokemonListHtmlTable(string htmlFilename)
         {
@@ -27,7 +26,7 @@ namespace PokemonTypeMovesetDataTool
 
             foreach (var tr in htmlDoc.DocumentNode.SelectNodes("//tbody/tr"))
             {
-                var linkUrl = tr.SelectSingleNode("//a").Attributes["href"].Value;
+                var linkUrl = tr.GetDescendantsByTagName("a").First().Attributes["href"].Value;
                 tr.AppendChild(HtmlNode.CreateNode($"<td>{linkUrl}</td>"));
             }
             var sw = new StringWriter();

@@ -1,23 +1,23 @@
-﻿using PokemonTypeMoveset.DataTool;
-using PokemonTypeMovesetDataTool;
-using System.CommandLine;
+﻿using System.CommandLine;
+using static PokemonTypeMoveset.DataTool.CommandHandlers;
 
 
 
-var pokemonNameOption = new Option<string?>(
-            name: "--name",
-            description: "The name of the Pokemon to retrieve learnset.");
+var rootCommand = new RootCommand("Pokemon type movesest data tool");
 
-var rootCommand = new RootCommand("Sample app for System.CommandLine");
-rootCommand.AddOption(pokemonNameOption);
+var downloadPokemonMovesetCommand = new Command("download-moveset", "Download a Pokemon's list of moves.");
+var pokemonNameOption = new Option<string?>(name: "--name", description: "The name of the Pokemon to retrieve learnset.");
+downloadPokemonMovesetCommand.AddOption(pokemonNameOption);
+downloadPokemonMovesetCommand.SetHandler(DownloadPokemonMoveset, pokemonNameOption);
+rootCommand.AddCommand(downloadPokemonMovesetCommand);
 
-rootCommand.SetHandler(async (name) => 
-{ 
-    var moveNames = await new PokemonLearnsetHtml().GetMoveNames(name);
-    FileDataProvider.PokemonLearnsets[name] = moveNames;
-    FileDataProvider.PersistLearnsetsDatastore();
+var downloadPokemonListCommand = new Command("parse-list", "Download list of Pokemon.");
+var pokemonListLocationOption = new Option<string>(name: "--list", "");
+downloadPokemonListCommand.AddOption(pokemonListLocationOption);
+downloadPokemonListCommand.SetHandler(ParsePokemonList, pokemonListLocationOption);
+rootCommand.AddCommand(downloadPokemonListCommand);
 
-}, pokemonNameOption);
+
 
 var output = await rootCommand.InvokeAsync(args);
 Console.Out.WriteLine(output);

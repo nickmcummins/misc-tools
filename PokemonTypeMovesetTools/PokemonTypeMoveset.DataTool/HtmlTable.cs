@@ -10,7 +10,12 @@ namespace PokemonTypeMoveset.DataTool
         public string ToJson()
         {
             var xlsxFilename = ToXlsx();
-            return ExcelToJsonParser.GetJsonStringFromTabular(new FileStream(xlsxFilename, FileMode.OpenOrCreate));
+            var jsonFilename = xlsxFilename.Replace(".xlsx", ".json");
+            var jsonStr = ExcelToJsonParser.GetJsonStringFromTabular(new FileStream(xlsxFilename, FileMode.OpenOrCreate));
+            File.WriteAllText(jsonFilename, jsonStr);
+            Console.Out.WriteLine($"Wrote {jsonFilename} of length {jsonStr.Length}.");
+
+            return jsonStr;
         }
     }
 }
