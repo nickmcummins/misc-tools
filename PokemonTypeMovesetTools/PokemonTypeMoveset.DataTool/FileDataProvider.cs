@@ -26,9 +26,9 @@ namespace PokemonTypeMoveset.DataTool
             return await Task.Run(() => PokemonLearnsets[pokemonName]);
         }
 
-        public static void PersistLearnsetsDatastore()
+        public static void PersistLearnsetsDatastore(string filename = "pokemon-learnsets.json")
         {
-            var learnsetDatastoreFilepath = Path.Combine(new[] { GetDirectoryName(Assembly.GetExecutingAssembly().Location), "data", "pokemon-learnsets.json" });
+            var learnsetDatastoreFilepath = Path.Combine(new[] { GetDirectoryName(Assembly.GetExecutingAssembly().Location), "data", filename });
             Console.Out.WriteLine($"Attempting to update {learnsetDatastoreFilepath}.");
             var learnsetJson = PokemonLearnsets.ToJson();
             File.WriteAllText(learnsetDatastoreFilepath, learnsetJson);

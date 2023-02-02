@@ -16,6 +16,7 @@ namespace PokemonTypeMoveset.DataTool
         public async Task<IEnumerable<string>> GetMoveNames(string pokemonName)
         {
             var moveNames = new HashSet<string>();
+            Console.Out.WriteLine($"Downloading moves for {pokemonName} from {FileDataProvider.Pokemon[pokemonName]}.");
             var html = new HtmlParser().ParseDocument(await HttpClient.GetStringAsync(FileDataProvider.Pokemon[pokemonName]));
             var movesTablesH3 = html.QuerySelectorAll("h3").Where(h3 => LearnsetTables.Contains(h3.TextContent));
             foreach (var movesTableH3 in movesTablesH3)
@@ -25,6 +26,7 @@ namespace PokemonTypeMoveset.DataTool
                 var tableMoveNames = JsonSerializer.Deserialize<IEnumerable<IDictionary<string, string>>>(movesTableJson)
                     .Select(moveObj => moveObj["Move"]);
                 moveNames.AddRange(tableMoveNames);
+                Console.Out.WriteLine($"\tAdded {tableMoveNames.Count()} moves.");
             }
 
             return moveNames;

@@ -5,13 +5,14 @@ using System.Reflection;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Text.RegularExpressions;
 
 namespace PokemonTypeMoveset.DataTool
 {
     public static class Extensions
     {
         private static readonly string Comma = ",";
-
+        private static readonly Regex MultiSpace = new Regex(@"\s\s+", RegexOptions.Compiled);
         private static JsonSerializerOutputFormatOptions _jsonOptions;
         public static JsonSerializerOutputFormatOptions JsonOptions
         {
@@ -19,7 +20,7 @@ namespace PokemonTypeMoveset.DataTool
             {
                 if (_jsonOptions == null)
                 {
-                    _jsonOptions = new JsonSerializerOutputFormatOptions(new JsonSerializerOptions());
+                    _jsonOptions = new JsonSerializerOutputFormatOptions(new JsonSerializerOptions() { WriteIndented = true });
                     _jsonOptions.SerializerOptions.Converters.Add(new JsonStringEnumConverter());
                     _jsonOptions.ListOnSingleLine = true;
                 }
@@ -28,6 +29,7 @@ namespace PokemonTypeMoveset.DataTool
             }
         }
 
+        #region XML/HTML Element
         public static IElement GetNextSiblingElementByTagname(this IElement element, string tagName)
         {
             do
@@ -47,39 +49,15 @@ namespace PokemonTypeMoveset.DataTool
             return htmlNode.Descendants()
                 .Where(descendant => descendant.NodeType == HtmlNodeType.Element && descendant.Name == tagName);
         }
+        #endregion
 
+        #region IEnumerable
         public static void AddRange<T>(this ISet<T> set, IEnumerable<T> additionalItems)
         {
             foreach (var additionalItem in additionalItems)
             {
                 set.Add(additionalItem);
             }
-        }
-
-
-        public static T ReadResource<T>(this Assembly assembly, string resourceFilename) => JsonSerializer.Deserialize<T>(assembly.ReadResourceAsString(resourceFilename), JsonOptions.SerializerOptions);
-
-        public static string ReadResourceAsString(this Assembly assembly, string resourceFilename)
-        {
-            var fullResourcePath = assembly.GetManifestResourceNames()
-                .FirstOrDefault(resourceName => resourceName.EndsWith(resourceFilename));
-
-            using var streamReader = new StreamReader(assembly.GetManifestResourceStream(fullResourcePath));
-            return streamReader.ReadToEnd();
-        }
-
-        public static string ToString(this byte[] bytes, Encoding encoding) => encoding.GetString(bytes);
-
-        public static string ToJson<T>(this T obj, JsonSerializerOutputFormatOptions options = null)
-        {
-            options = options ?? JsonOptions;
-            var jsonStr = Encoding.UTF8.GetString(JsonSerializer.SerializeToUtf8Bytes(obj, options.SerializerOptions));
-            if (options.ListOnSingleLine)
-            {
-                var lines = jsonStr.Split("\n").Select(line => line.Contains("]") ? $"{line}\n" : line);
-                jsonStr = string.Join(string.Empty, lines);
-            }
-            return jsonStr;
         }
 
         public static string ToListString<T>(this IEnumerable<T> list, Func<T, string> toStrFunc = null) => $"[{string.Join(Comma, list.Select(item => toStrFunc != null ? toStrFunc(item) : item.ToString()))}]";
@@ -109,5 +87,59 @@ namespace PokemonTypeMoveset.DataTool
             return Runner(data, k);
         }
 
+        public static IEnumerable<T> Select<T>(this IEnumerable<T> list, Func<T, T> selectorFirst, Func<T, T> selector, Func<T, T>? selectorLast = null)
+        {
+            var i = 0;
+            var length = list.Count();
+            return list.Select(item =>
+            {
+                T selected;
+                if (i == 0) selected = selectorFirst(item);
+                else if (selectorLast == null || i < length - 1) selected = selector(item);
+                else selected = selectorLast(item);
+                i++;
+                return selected;
+            });
+        }
+        #endregion
+
+        #region Assembly
+        public static T ReadResource<T>(this Assembly assembly, string resourceFilename) => JsonSerializer.Deserialize<T>(assembly.ReadResourceAsString(resourceFilename), JsonOptions.SerializerOptions);
+
+        public static string ReadResourceAsString(this Assembly assembly, string resourceFilename)
+        {
+            var fullResourcePath = assembly.GetManifestResourceNames()
+                .FirstOrDefault(resourceName => resourceName.EndsWith(resourceFilename));
+
+            using var streamReader = new StreamReader(assembly.GetManifestResourceStream(fullResourcePath));
+            return streamReader.ReadToEnd();
+        }
+        #endregion
+
+        #region String/JSON
+        public static string ToString(this byte[] bytes, Encoding encoding) => encoding.GetString(bytes);
+
+        public static string Replace(this string s, Regex regex, string replacement) => regex.Replace(s, replacement);
+
+        public static string ToJson<T>(this T obj, JsonSerializerOutputFormatOptions? options = null)
+        {
+            options = options ?? JsonOptions;
+            var jsonStr = Encoding.UTF8.GetString(JsonSerializer.SerializeToUtf8Bytes(obj, options.SerializerOptions));
+            if (options.ListOnSingleLine)
+            {
+                var lines = jsonStr.Split("\r\n").Select(
+                    firstLine => $"{firstLine}\n", 
+                    line => line.Contains("]") ? $"{line}\n" : "\t" + line.Replace(MultiSpace, " ").Remove("\t").Trim(),
+                    lastLine => lastLine);
+                jsonStr = string.Join(string.Empty, lines);
+            }
+            return jsonStr;
+        }
+
+        public static string Remove(this string s, string substr)
+        {
+            return s.Replace(substr, string.Empty);
+        }
+        #endregion
     }
 }
