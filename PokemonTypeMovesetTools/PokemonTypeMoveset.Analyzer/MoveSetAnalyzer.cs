@@ -1,4 +1,5 @@
-﻿using PokemonTypeMovesetAnalyzer.Models;
+﻿using PokemonTypeMoveset.DataTool;
+using PokemonTypeMovesetAnalyzer.Models;
 
 namespace PokemonTypeMovesetAnalyzer
 {

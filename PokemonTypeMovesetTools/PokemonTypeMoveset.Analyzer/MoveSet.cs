@@ -1,4 +1,5 @@
-﻿using static PokemonTypeMoveset.DataTool.FileDataProvider;
+﻿using PokemonTypeMoveset.DataTool;
+using static PokemonTypeMoveset.DataTool.FileDataProvider;
 using static PokemonTypeMovesetAnalyzer.TypesChart;
 
 namespace PokemonTypeMovesetAnalyzer.Models

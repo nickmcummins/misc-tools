@@ -30,7 +30,7 @@ namespace PokemonTypeMoveset.DataTool
         {
             var learnsetDatastoreFilepath = Path.Combine(new[] { GetDirectoryName(Assembly.GetExecutingAssembly().Location), "data", "pokemon-learnsets.json" });
             Console.Out.WriteLine($"Attempting to update {learnsetDatastoreFilepath}.");
-            var learnsetJson = System.Text.Encoding.UTF8.GetString(JsonSerializer.SerializeToUtf8Bytes(PokemonLearnsets));
+            var learnsetJson = PokemonLearnsets.ToJson();
             File.WriteAllText(learnsetDatastoreFilepath, learnsetJson);
             Console.Out.WriteLine($"Wrote {learnsetDatastoreFilepath} with size {learnsetJson} bytes.");
         }
