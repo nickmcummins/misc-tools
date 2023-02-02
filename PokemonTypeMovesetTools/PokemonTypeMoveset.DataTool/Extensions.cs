@@ -101,6 +101,19 @@ namespace PokemonTypeMoveset.DataTool
                 return selected;
             });
         }
+
+        public static IDictionary<TKey, IEnumerable<TSource>> ToGroupedDictionary<TSource, TKey>(this IEnumerable<TSource> source, Func<TSource, TKey> keySelector)
+        {
+            var grouping = source.GroupBy(keySelector);
+
+            var dict = new Dictionary<TKey, IEnumerable<TSource>>();
+            foreach (var group in grouping)
+            {
+                var groupKey = keySelector.Invoke(group.First());
+                dict[groupKey] = group.Select(item => item).ToList();
+            }
+            return dict;
+        }
         #endregion
 
         #region Assembly
