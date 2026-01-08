@@ -14,7 +14,7 @@ def pngsize(pngfile):
 
 if __name__ == '__main__':
     icofile = sys.argv[1]
-    iconname = icofile.replace(".ico", "").replace("-", " ")
+    iconname = path.basename(icofile).replace(".ico", "").replace("-", " ")
 
     if path.exists('tmp'):
         run('rm -rf tmp')
