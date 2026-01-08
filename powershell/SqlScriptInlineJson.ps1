@@ -1,7 +1,7 @@
 param(
     [Parameter(Mandatory=$true, Position=1)]
     $SqlFile,
-    [Parameter(Mandatory=$true, Position=2)]
+    [Parameter(Mandatory=$false, Position=2)]
     $InlinedSqlFile
 )
 
@@ -10,8 +10,13 @@ $selectBulkColumnJsonClobs = Select-String -AllMatches "\(SELECT BulkColumn FROM
 foreach ($match in $selectBulkColumnJsonClobs.Matches) {
     $jsonFilename =  $match.Groups[1].Value
     $json = [System.IO.File]::ReadAllText("$PWD\$jsonFilename.json") -replace '\s+', ' ' -replace ' ', ''
-    #Write-Host "(SELECT BulkColumn FROM OPENROWSET(BULK '$jsonFilename.json', SINGLE_CLOB) as [json])"
     $sqlScript = $sqlScript.Replace("(SELECT BulkColumn FROM OPENROWSET(BULK '$jsonFilename.json', SINGLE_CLOB) as [json])", "'$json'")
 }
 
-[System.IO.File]::WriteAllText($InlinedSqlFile, $sqlScript)
+if ($InlinedSqlFile.Length > 0) {
+    [System.IO.File]::WriteAllText($PWD.ToString() + '\' + $InlinedSqlFile, $sqlScript)
+    Write-Host "Wrote $inlinedSqlFile"
+}
+else {
+    Write-Host $sqlScript
+}
