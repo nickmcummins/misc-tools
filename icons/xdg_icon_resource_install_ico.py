@@ -1,5 +1,5 @@
+import argparse
 import os
-import sys
 from os import popen, path
 
 
@@ -13,7 +13,13 @@ def pngsize(pngfile):
 
 
 if __name__ == '__main__':
-    icofile = sys.argv[1]
+    parser = argparse.ArgumentParser(prog='xdg_icon_resource_install_ico', description='Install a Windows icon (.ico) using xdg-icon-resource install for all embedded icons sizes..', epilog='Text at the bottom of help')
+    parser.add_argument('icofile')  # positional argument
+    parser.add_argument('--context', choices=['apps', 'actions', 'devices', 'emblems', 'filesystems', 'location', 'mimetypes', 'stock'], required=True)  # option that takes a value
+    parser.add_argument('--sudo', action=argparse.BooleanOptionalAction)
+    args = parser.parse_args()
+
+    icofile = args.icofile
     iconname = path.basename(icofile).replace(".ico", "").replace("-", " ")
 
     if path.exists('tmp'):
@@ -26,5 +32,5 @@ if __name__ == '__main__':
     pngfiles = os.listdir('tmp')
 
     for pngfile in pngfiles:
-        #print(pngfile)
-        run(f'xdg-icon-resource install --novendor --size {pngsize(pngfile)} tmp/{pngfile} "{iconname}"')
+        prefix = 'sudo ' if args.sudo else ''
+        run(f'{prefix}xdg-icon-resource install --novendor --context {args.context} --size {pngsize(pngfile)} tmp/{pngfile} "{iconname}"')
