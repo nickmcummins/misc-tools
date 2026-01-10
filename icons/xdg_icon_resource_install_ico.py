@@ -1,16 +1,8 @@
 import argparse
 import os
-from os import popen, path
-
-
-def run(cmd):
-    print(f'Running {cmd} ...')
-    output = popen(cmd).read()
-    return output
-
-def pngsize(pngfile):
-    return pngfile.split('_')[-1].split('x')[0]
-
+from os import path
+from icons.common import run
+from icons.ico_add_size import pngsize
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(prog='xdg_icon_resource_install_ico', description='Install a Windows icon (.ico) using xdg-icon-resource install for all embedded icons sizes..', epilog='Text at the bottom of help')

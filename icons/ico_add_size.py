@@ -1,12 +1,8 @@
 import argparse
 import os
-from os import popen, path
+from os import path
+from icons.common import run
 
-
-def run(cmd):
-    print(f'Running {cmd} ...')
-    output = popen(cmd).read()
-    return output
 
 def pngsize(pngfile):
     return pngfile.split('_')[-1].split('x')[0]

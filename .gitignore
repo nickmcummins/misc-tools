@@ -28,3 +28,6 @@ PokemonTypeMovesetTools/PokemonTypeMoveset.Analyzer/Data/json/Goodra.json
 PokemonTypeMovesetTools/PokemonTypeMoveset.Analyzer/Data/html/pokemon-list.json
 PokemonTypeMovesetTools/PokemonTypeMoveset.Analyzer/Data/csv/VioletScarletMoves.csv
 PokemonTypeMovesetTools/PokemonTypeMoveset.Analyzer/Data/csv/Goodra.csv
+**/*.png
+
+*.png
