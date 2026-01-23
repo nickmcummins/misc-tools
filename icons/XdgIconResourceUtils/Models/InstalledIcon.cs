@@ -1,29 +1,28 @@
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace XdgIconResourceUtils.Models
 {
     public class InstalledIcon
     {
-        public string Filename { get; init; }
+        public string IconFilename { get; init; }
+        public IDictionary<(int size, string context), InstalledIconVariant> Variants { get; init; }
 
-        public IDictionary<int, string> Sizes { get; init; }
-
-        public InstalledIcon(string iconFilepath)
+        public InstalledIcon(string iconFilename)
         {
-            Filename = Path.GetFileName(iconFilepath);
-            Sizes = new Dictionary<int, string>();
-            AddSize(iconFilepath);
+            IconFilename = iconFilename;
+            Variants = new Dictionary<(int size, string context), InstalledIconVariant>();
         }
 
-        public void AddSize(string iconFilepath)
+        public void AddVariant(InstalledIconVariant iconVariant)
         {
-            Sizes[iconFilepath.GetIconSize()] =  iconFilepath;
+
+            Variants[(iconVariant.Size, iconVariant.Context)] = iconVariant;
         }
 
         public override string ToString()
         {
-            return $"{Filename} [sizes: {string.Join(',', Sizes.Keys)}]";
+            return string.Concat($"{IconFilename}\n", string.Join("\n", Variants.Values.Select(variant => string.Concat("\t", variant.ToString()))));
         }
     }
 }
