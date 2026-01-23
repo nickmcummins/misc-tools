@@ -12,7 +12,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     icofile = args.icofile
-    iconname = path.basename(icofile).replace(".ico", "").replace("-", " ")
+    iconname = path.basename(icofile).replace(".ico", "")
 
     if path.exists('tmp'):
         run('rm -rf tmp')
