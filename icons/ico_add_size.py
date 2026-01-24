@@ -2,6 +2,7 @@ import argparse
 import os
 from os import path
 from icons.common import run
+from datetime import datetime
 
 
 def pngsize(pngfile):
@@ -49,9 +50,16 @@ if __name__ == '__main__':
     ico_sizes = dict(map(lambda icosize: (icosize.size, icosize), map(lambda sizeline: IcoSize(icon_name, IcoSize.parse_info_line(sizeline)), list(map(lambda line: list(map(lambda linep: linep.split('='), filter(lambda p: '=' in p, line.split(' ')))), run(f'icotool -l {icofile}').replace('--', '').strip().split('\n'))))))
 
     wanted_sizes = list(map(lambda wanted_size: int(wanted_size), args.sizes.split(',')))
-    missing_sizes = set(wanted_sizes).difference(set(map(lambda icosize: icosize, ico_sizes.keys())))
+
     for size in ico_sizes:
         print(f'Size {size}')
+
+    missing_sizes = set(wanted_sizes).difference(set(map(lambda icosize: icosize, ico_sizes.keys())))
+    if len(missing_sizes) > 0:
+        timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+        icofile_orig = icofile.replace('.ico', f'_{timestamp}.ico')
+        run(f'cp {icofile} {icofile_orig}')
+
     for missing_size in missing_sizes:
         print(f'Missing size: {size}')
         next_size = nextsize(missing_size, ico_sizes.keys())
@@ -60,3 +68,5 @@ if __name__ == '__main__':
 
         resized_pngfilename = next_size_ico.pngfilename.replace(str(next_size), str(missing_size))
         run(f'convert tmp/{next_size_ico.pngfilename} -resize {missing_size}x{missing_size} {resized_pngfilename}')
+
+        print(' '.join(map(lambda size: size.pngfilename, ico_sizes.values())))
