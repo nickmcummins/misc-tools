@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "XdgIconResourceUtils": {
+      "commandName": "Project",
+      "commandLineArgs": "uninstall --theme L:\\usr\\share\\icons\\hicolor"
+    }
+  }
+}

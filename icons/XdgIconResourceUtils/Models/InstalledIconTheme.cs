@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,6 +7,8 @@ namespace XdgIconResourceUtils.Models
 {
     public class InstalledIconTheme
     {
+        private static readonly Regex IconThemeSizeFolderPattern = new Regex(@"^([0-9]+)x([0-9]+)$");
+
         public string Folder { get; init; }
 
         public IDictionary<string, InstalledIcon> Icons { get; init; }
@@ -15,33 +16,35 @@ namespace XdgIconResourceUtils.Models
         public InstalledIconTheme(string folder)
         {
             Folder = folder;
-            Icons  = new  Dictionary<string, InstalledIcon>();
+            Icons  = new Dictionary<string, InstalledIcon>();
             GetIcons(folder);
         }
 
         private void GetIcons(string iconThemeFolder)
         {
-            var sizeFolders = Directory.GetDirectories(iconThemeFolder).Where(directoryName => Regex.IsMatch(Path.GetFileName(directoryName), @"^([0-9]+)x([0-9]+)$")).ToList();
-            foreach (var sizeFolder in sizeFolders)
+            foreach (var sizeFolder in Directory.GetDirectories(iconThemeFolder).Where(directoryName => IconThemeSizeFolderPattern.IsMatch(Path.GetFileName(directoryName))))
             {
-                Console.Out.WriteLine(sizeFolder);
+                var size = sizeFolder.GetIconSize();
                 foreach (var iconCategory in Directory.GetDirectories(sizeFolder))
                 {
+                    var context = Path.GetFileName(iconCategory);
                     foreach (var sizedIconFile in Directory.GetFiles(iconCategory))
                     {
                         var iconFilename = Path.GetFileName(sizedIconFile);
                         if (!Icons.TryGetValue(iconFilename, out var installedIcon))
                         {
-                            installedIcon = new InstalledIcon(sizedIconFile);
+                            installedIcon = new InstalledIcon(iconFilename);
                             Icons[iconFilename] = installedIcon;
                         }
-                        else
-                        {
-                            installedIcon.AddSize(sizedIconFile);
-                        }
+                        installedIcon.AddVariant(new InstalledIconVariant(sizedIconFile, size, context));
                     }
                 }
             }
+        }
+
+        public override string ToString()
+        {
+            return $"{Folder}\n{string.Join('\n', Icons.Values.Select(icon => icon.ToString()))}";
         }
     }
 }
