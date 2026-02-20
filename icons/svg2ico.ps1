@@ -15,7 +15,7 @@ for ($i = 0; $i -lt $sizes.length; $i++) {
     $size = $sizes[$i];
     Write-Host $sizes[$i]
     Write-Host $filename
-    inkscape -z -e tmp/${filename}_${size}.png -w $size -h $size -d 300 $SvgFilename
+    inkscape -z -o tmp/${filename}_${size}.png -w $size -h $size -d 300 $SvgFilename
     pngcompress tmp/${filename}_${size}.png
 }
 
