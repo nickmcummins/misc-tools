@@ -1,0 +1,34 @@
+---
+name: Mirror Repository
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  gitlab:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update CA certificates
+        run: | 
+            sudo apt-get update && sudo apt-get install -y ca-certificates
+            sudo mkdir -p /usr/local/share/ca-certificates
+            sudo wget http://crt.sectigo.com/SectigoPublicServerAuthenticationCADVR36.crt -o //usr/local/share/ca-certificates/SectigoPublicServerAuthenticationCADVR36.crt 
+            sudo update-ca-certificates
+            git config --global http.sslVerify false
+            
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # This must be set to 0 to avoid shallow cloning.
+
+      - name: Mirror Repository
+        uses: nickmcummins/github-action-gitlab-mirror@v1.0.1
+        with:
+          password: ${{ secrets.GITLAB_PAT }}
+          repository_url: https://gitlab.nickmcummins.com/forks/misc-tools.git
+          username: nickmcummins@linuxmail.org
