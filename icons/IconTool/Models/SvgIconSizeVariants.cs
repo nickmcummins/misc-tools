@@ -1,12 +1,12 @@
-﻿namespace IconTool.Models
+﻿using IconTool.Commands;
+
+namespace IconTool.Models
 {
     public class SvgIconSizeVariants
     {
-        public static readonly int[] IcoSizes = [16, 24, 32, 48, 64, 128, 256];
-
         public string IconFilename { get; }
 
-        public IDictionary<string, SvgIcon> Sizes { get; }
+        public SortedDictionary<string, SvgIcon> Sizes { get; }
 
         public SvgIconSizeVariants(SvgIcon svgIcon)
         {
@@ -14,9 +14,9 @@
             Sizes = GetSizeVariants(svgIcon);
         }
 
-        private static IDictionary<string, SvgIcon> GetSizeVariants(SvgIcon svgIcon)
+        private static SortedDictionary<string, SvgIcon> GetSizeVariants(SvgIcon svgIcon)
         {
-            var sizeVariants = new Dictionary<string, SvgIcon>();
+            var sizeVariants = new SortedDictionary<string, SvgIcon>(SvgIconSizeVariantsComparer.Instance);
             sizeVariants[svgIcon.Size] = svgIcon;
             var iconFilename = Path.GetFileName(svgIcon.FilePath);
             foreach (var sizeDirectory in Directory.GetDirectories(svgIcon.SizeParentDirectory).Except([svgIcon.SizeDirectory]))
