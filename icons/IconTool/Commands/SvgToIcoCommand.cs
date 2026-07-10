@@ -1,9 +1,5 @@
-﻿using IconTool.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using IconTool.Inkscape;
+using IconTool.Models;
 
 namespace IconTool.Commands
 {
@@ -15,10 +11,26 @@ namespace IconTool.Commands
         {
             var svgIcon = new SvgIcon(args.svgFile);
             var svgIconSizes = new SvgIconSizeVariants(svgIcon);
-            var sizes = new SortedList<string>(0, SvgIconSizeVariantsComparer.Instance);
-            sizes.UnionWith(svgIconSizes.Sizes.Keys);
-            sizes.Sort();
 
+            var tempDirectory = Directory.CreateTempSubdirectory();
+            foreach (var sizeKvp in svgIconSizes.Sizes)
+            {
+                int width;
+                int height;
+                if (!int.TryParse(sizeKvp.Key, out var size))
+                {
+                    var objectGeometry = InkscapeCli.QueryObjectGeometry(svgIcon.FilePath, [QueryObjectGeometryProperty.Width, QueryObjectGeometryProperty.Height]);
+                    width = objectGeometry.Width.Value;
+                    height = objectGeometry.Height.Value;
+                } 
+                else
+                {
+                    width = size;
+                    height = size;
+                }
+
+                InkscapeCli.ExportFile(svgIcon.FilePath, args.icoFile, width, height, tempDirectory.FullName, ExportFileType.Png);
+            }
         }
     }
 }

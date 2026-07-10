@@ -1,4 +1,4 @@
-﻿using IconTool.Models;
+﻿using IconTool.Commands;
 using System.CommandLine;
 
 namespace IconTool
@@ -16,18 +16,13 @@ namespace IconTool
             svgToIcoCommand.Arguments.Add(svgArgument);
             svgToIcoCommand.Arguments.Add(icoArgument);
 
-            var keyOption = new Option<string>("--key")
-            {
-                Description = "Configuration key"
-            };
-
-            svgToIcoCommand.Options.Add(keyOption);
             svgToIcoCommand.SetAction(parseResult =>
             {
-                var svgIcon = new SvgIcon(parseResult.GetValue(svgArgument));
-                Console.Out.WriteLine(svgIcon);
-                var svgIconSizes = new SvgIconSizeVariants(svgIcon);
-                Console.Out.WriteLine(svgIconSizes);
+                //var svgIcon = new SvgIcon(parseResult.GetValue(svgArgument));
+                //Console.Out.WriteLine(svgIcon);
+                //var svgIconSizes = new SvgIconSizeVariants(svgIcon);
+                //Console.Out.WriteLine(svgIconSizes);
+                new SvgToIcoCommand().Handle((parseResult.GetValue(svgArgument), parseResult.GetValue(icoArgument)));
             });
             
             rootCommand.Subcommands.Add(svgToIcoCommand);
