@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="inkscape.vcxproj" />
+  <Project Path="inkscape.vcxproj" Id="4b8eb43a-72a1-419e-ac5e-5d656befb2be" />
 </Solution>
