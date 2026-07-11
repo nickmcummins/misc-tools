@@ -137,6 +137,9 @@
     <Manifest>
       <EnableSegmentHeap>true</EnableSegmentHeap>
     </Manifest>
+    <PostBuildEvent>
+      <Command>xcopy /Y $(OutDir)\inkscape.exe C:\bin &amp; echo Copied inkscape.exe to C:\bin </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="inkscape.cpp" />
