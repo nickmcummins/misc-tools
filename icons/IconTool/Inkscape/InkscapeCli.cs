@@ -10,7 +10,7 @@ namespace IconTool.Inkscape
             var startInfo = new ProcessStartInfo
             {
                 FileName = "inkscape",
-                Arguments = $"-z -w {exportWidth} -h {exportHeight} -d 300 {svgfile} --export-filename {tempDirectory}/{Path.GetFileName(exportFilename)}_{exportWidth}.{exportFileType.ToString().ToLower()} --export-type {exportFileType.ToString().ToLower()}",
+                Arguments = $"-z -w {exportWidth} -h {exportHeight} -d 300 {svgfile} --export-filename {tempDirectory}{Path.DirectorySeparatorChar}{Path.GetFileName(exportFilename)}_{exportWidth}.{exportFileType.ToString().ToLower()} --export-type {exportFileType.ToString().ToLower()}",
                 RedirectStandardOutput = true,
                 RedirectStandardError = true,
                 UseShellExecute = false,
