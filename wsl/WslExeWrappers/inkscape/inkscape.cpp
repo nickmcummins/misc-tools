@@ -17,34 +17,6 @@ static std::string Join(std::vector<std::string> strings, std::string delim) {
 	return std::ranges::to<std::string>(joined_view);
 }
 
-std::string HandleToString(HANDLE hPipeRead) {
-    std::string result;
-
-    constexpr DWORD BUFFER_SIZE = 4096;
-    std::vector<char> buffer(BUFFER_SIZE);
-
-    DWORD bytesRead = 0;
-    BOOL success = FALSE;
-
-    while (true) {
-        success = ReadFile(
-            hPipeRead,          // Handle to the pipe
-            buffer.data(),      // Buffer to receive data
-            BUFFER_SIZE,        // Number of bytes to read
-            &bytesRead,         // Stores number of bytes actually read
-            nullptr             // Not using overlapped I/O
-        );
-
-        if (!success || bytesRead == 0) {
-			std::cerr << "Error reading from pipe: " << GetLastError() << std::endl;
-            break;
-        }
-        result.append(buffer.data(), bytesRead);
-    }
-
-    return result;
-}
-
 std::string ExecuteAndCapture(const std::wstring& command) {
     // 1. Configure security attributes to allow handle inheritance
     SECURITY_ATTRIBUTES saAttr;
@@ -126,52 +98,19 @@ std::string ExecuteAndCapture(const std::wstring& command) {
 }
 
 
-static std::string ExecuteCommand(const std::wstring& command, bool redirectStdOut = true) {
+static void ExecuteCommand(const std::wstring& command) {
     static HMODULE hLib = LoadLibrary(L"wslapi.dll");
 	static auto pWslLaunch = reinterpret_cast<decltype(&WslLaunch)>(GetProcAddress(hLib, "WslLaunch"));
     
-
 	SetEnvironmentVariable(L"DISPLAY", L"127.0.0.1:0.0");
 
 	HANDLE hProcess;
-	HANDLE outputHandle = NULL;
-	HANDLE readOutputHandle = NULL;
+	HANDLE outputHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 
-	if (redirectStdOut) {
-		outputHandle = GetStdHandle(STD_OUTPUT_HANDLE);
-	}
-	else {
-		SECURITY_ATTRIBUTES saAttr;
-		saAttr.nLength = sizeof(SECURITY_ATTRIBUTES);
-		saAttr.bInheritHandle = TRUE;
-		saAttr.lpSecurityDescriptor = NULL;
-
-		if (!CreatePipe(&readOutputHandle, &outputHandle, &saAttr, 0)) {
-			return "Error: CreatePipe failed.";
-		}
-
-		if (!SetHandleInformation(readOutputHandle, HANDLE_FLAG_INHERIT, 0)) {
-			CloseHandle(readOutputHandle);
-			CloseHandle(outputHandle);
-			return "Error: SetHandleInformation failed.";
-		}
-	}
 	HRESULT hr = pWslLaunch(L"archlinux", command.data(), FALSE, GetStdHandle(STD_INPUT_HANDLE), outputHandle, outputHandle, &hProcess);
 	if (SUCCEEDED(hr)) {
-		if (redirectStdOut) {
-			return "";
-		}
-		else {
-			CloseHandle(outputHandle);
 
-			std::string result = HandleToString(readOutputHandle);
-			WaitForSingleObject(hProcess, INFINITE);
-			CloseHandle(hProcess);
-			CloseHandle(readOutputHandle);
-		}
 	}
-
-	return "";
 }
 
 static std::string WindowsToWslPath(const std::string& winPath) {
