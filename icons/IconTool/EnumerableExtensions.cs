@@ -17,5 +17,24 @@
                 throw new NotSupportedException($"{nameof(EnumerableExtensions)}.{nameof(Sort)} is not supported for type {list.GetType().Name}.");
             }
         }
+
+        public static T FindFirstItemLargerThan<T>(this IEnumerable<T> list, T item) where T : IComparable<T>
+        {
+            T listItem;
+            int i;
+            for (i = 0; i < list.Count(); i++)
+            {
+                listItem = list.ElementAt(i);
+                
+                if (listItem.CompareTo(item) > 0)
+                {
+                    return listItem;
+                }
+            }
+
+            listItem = list.ElementAt(i - 1);
+
+            return listItem;
+        }
     }
 }

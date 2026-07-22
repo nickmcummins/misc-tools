@@ -16,13 +16,16 @@ namespace IconTool
             svgToIcoCommand.Arguments.Add(svgArgument);
             svgToIcoCommand.Arguments.Add(icoArgument);
 
+            var fillDefaultIcoSizes = new Option<bool>("--include-all-default-ico-sizes");
+            svgToIcoCommand.Options.Add(fillDefaultIcoSizes);
+
             svgToIcoCommand.SetAction(parseResult =>
             {
                 //var svgIcon = new SvgIcon(parseResult.GetValue(svgArgument));
                 //Console.Out.WriteLine(svgIcon);
                 //var svgIconSizes = new SvgIconSizeVariants(svgIcon);
                 //Console.Out.WriteLine(svgIconSizes);
-                new SvgToIcoCommand().Handle((parseResult.GetValue(svgArgument), parseResult.GetValue(icoArgument)));
+                new SvgToIcoCommand().Handle((parseResult.GetValue(svgArgument), parseResult.GetValue(icoArgument), parseResult.GetValue(fillDefaultIcoSizes)));
             });
             
             rootCommand.Subcommands.Add(svgToIcoCommand);

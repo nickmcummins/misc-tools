@@ -19,7 +19,7 @@ namespace IconTool.Models
             var sizeVariants = new SortedDictionary<string, SvgIcon>(SvgIconSizeVariantsComparer.Instance);
             sizeVariants[svgIcon.Size] = svgIcon;
             var iconFilename = Path.GetFileName(svgIcon.FilePath);
-            foreach (var sizeDirectory in Directory.GetDirectories(svgIcon.SizeParentDirectory).Except([svgIcon.SizeDirectory]))
+            foreach (var sizeDirectory in Directory.GetDirectories(svgIcon.SizeParentDirectory).Except([svgIcon.SizeDirectory]).Where(dirName => !dirName.EndsWith("@2x")))
             {
                 var sizedSvgFilePath = Path.Combine(sizeDirectory, svgIcon.Context.ToString().ToLower(), iconFilename);
                 if (Path.Exists(sizedSvgFilePath))

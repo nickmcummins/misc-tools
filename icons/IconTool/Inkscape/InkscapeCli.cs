@@ -5,12 +5,13 @@ namespace IconTool.Inkscape
 {
     public static class InkscapeCli
     {
-        public static void ExportFile(string svgfile, string exportFilename, int exportWidth, int exportHeight, string tempDirectory, ExportFileType exportFileType)
+        public static string ExportFile(string svgfile, string exportFilename, int exportWidth, int exportHeight, string tempDirectory, ExportFileType exportFileType)
         {
+            var exportedFilename = $"{tempDirectory}{Path.DirectorySeparatorChar}{Path.GetFileName(exportFilename)}_{exportWidth}.{exportFileType.ToString().ToLower()}";
             var startInfo = new ProcessStartInfo
             {
                 FileName = "inkscape",
-                Arguments = $"-z -w {exportWidth} -h {exportHeight} -d 300 {svgfile} --export-filename {tempDirectory}{Path.DirectorySeparatorChar}{Path.GetFileName(exportFilename)}_{exportWidth}.{exportFileType.ToString().ToLower()} --export-type {exportFileType.ToString().ToLower()}",
+                Arguments = $"-z -w {exportWidth} -h {exportHeight} -d 300 {svgfile} --export-filename {exportedFilename} --export-type {exportFileType.ToString().ToLower()}",
                 RedirectStandardOutput = true,
                 RedirectStandardError = true,
                 UseShellExecute = false,
@@ -35,6 +36,8 @@ namespace IconTool.Inkscape
                     throw new Exception($"Error executing Inkscape CLI. Exit Code: {process.ExitCode}. Error Output: {error}");
                 }
             }
+
+            return exportedFilename;
         }
 
         public static ObjectGeometry QueryObjectGeometry(string svgfile, IList<QueryObjectGeometryProperty> queryProperties)
