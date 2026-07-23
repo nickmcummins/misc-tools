@@ -27,6 +27,13 @@ namespace IconTool.Models
                     var sizedSvgIcon = new SvgIcon(sizedSvgFilePath);
                     sizeVariants[sizedSvgIcon.Size] = sizedSvgIcon;
                 }
+
+                sizedSvgFilePath = Path.Combine(svgIcon.Context.ToString().ToLower(), sizeDirectory, iconFilename);
+                if (Path.Exists(sizedSvgFilePath))
+                {
+                    var sizedSvgIcon = new SvgIcon(sizedSvgFilePath);
+                    sizeVariants[sizedSvgIcon.Size] = sizedSvgIcon;
+                }
             }
             return sizeVariants;
         }
