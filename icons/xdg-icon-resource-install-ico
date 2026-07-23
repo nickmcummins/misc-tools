@@ -3,7 +3,10 @@
 [CmdletBinding()]
 param(
     [Parameter(Position = 0, Mandatory = $True)]
-    $IcoFilename
+    $IcoFilename,
+    
+    [Parameter(Position = 1, Mandatory = $False)]
+    $Context = "apps"
 )
 
 $scriptPath = [System.Environment]::GetEnvironmentVariable('_')
@@ -19,5 +22,5 @@ $pythonPath = $iconScriptsDir + ":" + $scriptsDir
 [System.Environment]::SetEnvironmentVariable('PYTHONPATH', $pythonPath)
 
 $iconName = [System.IO.Path]::GetFileName($IcoFilename).Replace(' ', '-').Replace('.ico', '-ico')
-Write-Host "Executing python $iconScriptsDir/xdg_icon_resource_install_ico.py $IcoFilename --name $iconName --context apps --sudo"
-python $iconScriptsDir/xdg_icon_resource_install_ico.py $IcoFilename --name $iconName --context apps --sudo
+Write-Host "Executing python $iconScriptsDir/xdg_icon_resource_install_ico.py $IcoFilename --name $iconName --context $Context --sudo"
+python $iconScriptsDir/xdg_icon_resource_install_ico.py $IcoFilename --name $iconName --context $Context --sudo

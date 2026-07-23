@@ -8,7 +8,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(prog='xdg_icon_resource_install_ico', description='Install a Windows icon (.ico) using xdg-icon-resource install for all embedded icons sizes..', epilog='Text at the bottom of help')
     parser.add_argument('icofile')  # positional argument
     parser.add_argument('--name', default=None)
-    parser.add_argument('--context', choices=['apps', 'actions', 'devices', 'emblems', 'filesystems', 'location', 'mimetypes', 'stock'], required=True)  # option that takes a value
+    parser.add_argument('--context', choices=['apps', 'actions', 'devices', 'emblems', 'filesystems', 'location', 'mimetypes', 'stock', 'categories', 'places'], required=True)  # option that takes a value
     parser.add_argument('--sudo', action=argparse.BooleanOptionalAction)
     args = parser.parse_args()
 
