@@ -29,9 +29,9 @@ namespace IconTool.Commands
                 int height;
                 if (!int.TryParse(sizeKvp.Key, out var size))
                 {
-                    var objectGeometry = InkscapeCli.QueryObjectGeometry(svgIcon.FilePath, [QueryObjectGeometryProperty.Width, QueryObjectGeometryProperty.Height]);
-                    width = objectGeometry.Width.Value;
-                    height = objectGeometry.Height.Value;
+                    var svgDoc = sizeKvp.Value.SvgDocument;
+                    width = (int)svgDoc.Width.Value;
+                    height = (int)svgDoc.Height.Value;
                 } 
                 else
                 {
@@ -63,9 +63,7 @@ namespace IconTool.Commands
             {
                 if (!int.TryParse(size, out var intSize) && !ObjectGeometryCache.TryGetValue(svgIconSizes.Sizes[size].FilePath, out intSize))
                 {
-                    var objectGeometry = InkscapeCli.QueryObjectGeometry(svgIconSizes.Sizes[size].FilePath,
-                        [QueryObjectGeometryProperty.Width, QueryObjectGeometryProperty.Height]);
-                    intSize = objectGeometry.Width.Value;
+                    intSize = (int)svgIconSizes.Sizes[size].SvgDocument.Width.Value;
                     ObjectGeometryCache[svgIconSizes.Sizes[size].FilePath] = intSize;
                 }
 
