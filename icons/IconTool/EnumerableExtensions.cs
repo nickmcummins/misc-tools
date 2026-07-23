@@ -36,5 +36,7 @@
 
             return listItem;
         }
+
+        public static bool IsSymlink(this FileInfo fileInfo) => fileInfo.LinkTarget != null;
     }
 }
