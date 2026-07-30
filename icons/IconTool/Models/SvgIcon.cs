@@ -1,6 +1,6 @@
 ﻿namespace IconTool.Models
 {
-    public class SvgIcon
+    public class SvgIcon : IIconFile
     {
         private readonly string[] _directoryPath;
 
@@ -9,7 +9,7 @@
         public string Size { get; }
         public string SizeDirectory { get; }
         public string SizeParentDirectory { get; }
-        
+
         public SvgIcon(string filePath)
         {
             FilePath = filePath;

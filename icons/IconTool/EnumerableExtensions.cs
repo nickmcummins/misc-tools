@@ -17,5 +17,10 @@
                 throw new NotSupportedException($"{nameof(EnumerableExtensions)}.{nameof(Sort)} is not supported for type {list.GetType().Name}.");
             }
         }
+
+        public static IDictionary<TKey, IList<T>> ToGroupedDictionary<TKey, T>(this IEnumerable<T> source, Func<T, TKey> keySelector) where TKey : notnull
+        {
+            return source.GroupBy(keySelector).ToDictionary(g => g.Key, g => { IList<T> list = [.. g]; return list; });
+        }
     }
 }
